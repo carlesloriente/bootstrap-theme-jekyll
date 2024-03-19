@@ -25,6 +25,7 @@ temp/*
 # Jekyll build
 _site/*
 _site_dev/*
+_site_local/*
 
 # Exception
 !**/.gitkeep
