@@ -1,0 +1,100 @@
+landing                 : true
+title                   : A Bootstrap 5 theme for Jekyll
+author                  : Demo Website
+url                     : "https://bootstrap-theme.notesoncloudcomputing.com"
+timezone                : "Europe/Madrid"
+description             :  A responsive Bootstrap 5 theme for Jekyll
+full_description        : >
+ Bootstrap theme Jekyll, created by Carles Loriente and based on a Clean blog by Start Bootstrap. This theme features a blog homepage, about page, tags cloud page, gallery of images page, an example post page, post comments powered by Disqus, and contact page form powered by Formspree.
+gh_repository           : https://github.com/carlesloriente/bootstrap-theme-jekyll/
+encoding                : "utf-8"
+locale                  : "en-US"
+lang                    : "en"
+formemail               : xwkglaqr
+permalink               : pretty
+
+# Features
+critical_css            : false
+
+# Theme Notice (please don't remove it ;))
+theme_version           : v.1.0.4
+theme_name              : NOCC Bootstrap Theme
+theme_repo              : https://github.com/carlesloriente/bootstrap-theme-jekyll/
+theme_author            : Carles Loriente
+theme_author_url        : https://www.notesoncloudcomputing.com/about/
+theme_download          : https://github.com/carlesloriente/bootstrap-theme-jekyll/archive/gh-pages.zip
+theme_logo              : "/assets/vendor/nocc-bootstrap-theme/images/nocc/nocc_logo.webp"
+
+# Social Profiles
+email                   : "fi1nziulf@mozmail.com"
+twitter_username        : godarthvader
+github_username         : carlesloriente
+#facebook_username      : 
+#instagram_username     : 
+linkedin_username       : carles-loriente
+kofi                    : S6S1O2GTU
+
+# Google
+google_site_verification: imA3xlKv43a50bTrOlAa3eWQ3VBCazAY4Y20KImDXOM
+google_analytics        : G-SM4Q43P2BB
+
+# Disqus Comments
+# Leave shortname blank to disable comments site-wide.
+# Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+disqus_shortname        : notes-on-cloud-infrastructure
+
+layouts_dir             : _layouts
+data_dir                : _data
+includes_dir            : _includes
+
+collections:
+  blog:
+    permalink           : /posts/:name/
+    output              : true
+  post_tags:
+    permalink           : /tags/:name/
+    output              : true
+
+defaults:
+  - scope:
+      path              : "posts"
+      type              : posts
+    values:
+      layout            : post
+  - scope:
+      path              : "post_tags"
+      type              : tags
+    values:
+      layout            : tag
+  - scope:
+      path              : 'assets/**'
+    values:
+      sitemap           : false
+
+# Markdown Processors
+kramdown:
+  auto_ids              : true
+  entity_output         : as_char
+  toc_levels            : [1, 2, 3, 4, 5, 6]
+  smart_quotes          : lsquo,rsquo,ldquo,rdquo
+  input                 : GFM
+  hard_wrap             : false
+  footnote_nr           : 1
+  show_warnings         : false
+
+# Build settings
+paginate                : 10
+paginate_path           : "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+sass:
+  load_paths:
+    - ./_sass
+    - ./includes
+    - ./node_modules/bootstrap/scss
+    - ./assets/vendor/nocc-bootstrap-theme/styles
+
+exclude: ["AUTHORS.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md", "LICENSE", "README.md", "SECURITY.md", "techstack.md", "techstack.yml", "WORKFLOW.md", "bin", "Gemfile", "Gemfile.lock", "manifest.webmanifest", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]

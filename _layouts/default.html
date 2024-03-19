@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html class="h-100" lang="{{ site.lang }}" data-bs-theme="light">
+  <head>
+    {% include head.html %}
+    {%- if jekyll.environment != "development" -%}
+    {% include google_analytics.html %}
+    {%- endif -%}
+  </head>
+  <body class="d-flex flex-column h-100" style="overflow-x: hidden;">
+    {% include navbar.html %}
+    {{ content }}
+    {% include footer.html %}
+
+    {% include scripts.html %}
+  </body>
+</html>
+

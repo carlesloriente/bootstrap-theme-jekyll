@@ -1,0 +1,18 @@
+
+<div id="icon-grid" class="container px-4 py-5">
+  <h2 class="pb-2 border-bottom">Key Features</h2>
+  <div class="row g-4 py-5 row-cols-2 row-cols-lg-3">
+  {% for feature in features -%}
+    <div class="col d-flex align-items-start">
+      <div class="features-icon features-icon-gradient text-body-emphasis  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <img role="img" class="filter-white" alt="Free software" aria-label="Free Software" src="{{ feature.background }}" width="45em" height="45em">
+      </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">{{ feature.background }}</h3>
+        {{ feature.content }}
+      </div>
+    </div>
+  {% endfor -%}
+  </div>
+</div>
+<div class="home-divider"></div>

@@ -1,0 +1,28 @@
+---
+layout: default
+title: Page not found
+permalink: /404.html
+background: '/assets/images/404.webp'
+sitemap: false
+---
+
+<header class="masthead sechead" style="height:65px;background-color:lightcoral;"></header>
+<main class="flex-shrink-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {% assign tag = page.title | sluggify %}
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">{{ page.title | escape }}</h1>
+          </header>
+
+          <div class="post-content">
+            <p>Please check the <a href="/posts/index.html" hreflang="{{ site.lang }}" aria-label="Posts index">index of posts</a>, or browse the <a href="/tags/" hreflang="{{ site.lang }}" aria-label="tags cloud">tags cloud</a> for more content.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  <div style="height:400px;background-repeat:no-repeat;background-position:center;margin-bottom:-40px;background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}');"></div>
+</main>

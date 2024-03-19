@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+{% if page.background %}
+<header class="masthead sechead" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(0,0,0,0.5) 100%), url('{{ page.background }}')">
+{% else %}
+<header class="masthead sechead">
+{% endif %}
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>{{ page.title }}</h1>
+          {% if page.subtitle -%}
+          <h2 class="subheading">{{ page.subtitle }}</h2>
+          {%- endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="flex-shrink-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+</main>

@@ -1,0 +1,64 @@
+---
+layout: default
+tagsindex: true
+---
+
+<header class="masthead" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(0,0,0,0.5) 100%), url('{{ page.background }}')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>{{ page.title }}</h1>
+          {% if page.subtitle -%}
+          <span class="subheading">{{ page.subtitle }}</span>
+          {%- endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="flex-shrink-0">
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <script type="text/javascript" src="{{"/assets/vendor/nocc-bootstrap-theme/js/jquery/3.7.1/jquery.min.js" | relative_url }}"></script>
+        <script type="text/javascript" src="{{"/assets/vendor/nocc-bootstrap-theme/js/jquery/jqcloud/2.0.3/jqcloud.min.js" | relative_url }}"></script>
+        <div class="wordcloud" style="height: 400px; width: 90%"></div>
+      </div>
+    </div>
+  </div>
+  <div class="home-divider"></div>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h4>Archive</h4>
+        <ul class="tag-list">
+          {%- for tag in site.post_tags %}
+          <li>
+            <a href="{{ tag.url }}" hreflang="{{ site.lang }}" aria-label="{{ tag.title }}">{{tag.title}} ({{ site.blog | where_exp: 'blog', 'blog.tags contains tag.title' | size }})</a>
+          </li>
+          {%- endfor %}
+        </ul>
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var tags = [];
+            {%- for tag in site.post_tags -%}
+              {% assign tag_slug = tag.title | sluggify %}
+              {% assign weight = site.blog | where_exp: 'blog', 'blog.tags contains tag.title' | size %}
+              {%- assign title = tag_slug -%}
+              tags.push({
+                text: "{{ title }}",
+                weight: '{{ weight }}',
+                link: '{% include tag_url tag=title %}'
+              });
+            {%- endfor -%}
+            $('.wordcloud').jQCloud(tags, {
+              'shape': 'rectangular'
+            });
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</main>

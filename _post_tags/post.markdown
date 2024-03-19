@@ -1,0 +1,4 @@
+---
+title: post
+layout: tag
+---
