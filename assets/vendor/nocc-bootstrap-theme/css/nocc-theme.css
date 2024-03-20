@@ -11527,8 +11527,12 @@ small a:focus, .small a:focus, small a:hover, .small a:hover {
   width: 30%;
 }
 
-.text-bg-primary {
+.badge {
+  background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.2));
+  text-transform: uppercase;
   color: #fff;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
 }
 
 .visually-hidden :not(:focus),

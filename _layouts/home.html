@@ -72,7 +72,7 @@ layout: default
               {%- if post.tags %}
               {% for tag in post.tags limit : 2 -%}
               <li class="d-flex align-items-center me-3">
-                <span class="badge text-bg-primary">#{{ tag }}</span>
+                <span class="badge">#{{ tag }}</span>
               </li>
               {%- endfor %}
               {%- endif %}
