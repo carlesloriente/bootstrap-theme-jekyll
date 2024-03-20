@@ -80,7 +80,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-font-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: "Oxygen Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-gradient: linear-gradient(180deg, rgba(33, 37, 41, 0.75), rgba(33, 37, 41, 0));
   --bs-body-font-family: "Lora", "Times New Roman", "Georgia", "Palatino", "Baskerville", -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-body-font-size: 1.1rem;
   --bs-body-font-weight: 400;
@@ -11742,6 +11742,19 @@ a .btn .disabled {
   border-color: #5a6268;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   background-color: #23272b;
+  color: #fff;
+}
+
+.btn-tertiary {
+  border-radius: 0.6rem;
+  border-color: var(--bs-info);
+  background-color: #dc3545;
+  color: #fff;
+}
+.btn-tertiary:hover, .btn-tertiary:focus, .btn-tertiary:active {
+  border-color: #5a6268;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  background-color: #c82333;
   color: #fff;
 }
 
