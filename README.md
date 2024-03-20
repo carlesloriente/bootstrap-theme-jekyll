@@ -1,6 +1,6 @@
 # Nocc bootstrap theme jekyll website
 
-[NOCC Bootstrap theme](https://bootstrap-theme.notesoncloudcomputing.com/). A responsive blog theme for [Bootstrap 5](https://getbootstrap.com/){:target="_blank"} created by [Carles Loriente](http://github.com/carlesloriente). Featuring a homepage, about page, tags cloud page, gallery of images page, examples post pages, post comments powered by [Disqus](https://disqus.com/){:target="_blank"} , and contact page form powered by [Formspree](https://formspree.io/){:target="_blank"} .
+[NOCC Bootstrap theme](https://bootstrap-theme.notesoncloudcomputing.com/). A responsive blog theme for [Bootstrap 5](https://getbootstrap.com/){:target="_blank"} created by [Carles Loriente](https://github.com/carlesloriente). Featuring a homepage, about page, tags cloud page, gallery of images page, examples post pages, post comments powered by [Disqus](https://disqus.com/){:target="_blank"} , and contact page form powered by [Formspree](https://formspree.io/){:target="_blank"} .
 
 ## Features
 

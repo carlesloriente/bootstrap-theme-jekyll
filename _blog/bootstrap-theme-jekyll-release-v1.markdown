@@ -11,7 +11,7 @@ tags:
 background: '/assets/images/bg-post.webp'
 ---
 
-[Bootstrap theme Jekyll](https://bootstrap-theme.notesoncloudcomputing.com/) A responsive blog theme for [Bootstrap 5](https://getbootstrap.com/) created by [Carles Loriente](http://github.com/carlesloriente) and based on [Clean Blog](https://github.com/startbootstrap/startbootstrap-clean-blog-jekyll) by [Start Bootstrap](http://startbootstrap.com/). Featuring a homepage, about page, tags cloud page, gallery of images page, an example post page, post comments powered by [Disqus](https://disqus.com/), and contact page form powered by [Formspree](https://formspree.io/).
+[NOCC Bootstrap theme](https://bootstrap-theme.notesoncloudcomputing.com/). A responsive blog theme for [Bootstrap 5](https://getbootstrap.com/) created by [Carles Loriente](https://github.com/carlesloriente). Featuring a homepage, about page, tags cloud page, gallery of images page, examples post pages, post comments powered by [Disqus](https://disqus.com/), and contact page form powered by [Formspree](https://formspree.io/).
 
 ## Features
 
@@ -61,7 +61,7 @@ Bootstrap theme Jekyll was created by and is maintained by **[Carles Loriente](h
 - [Twitter](https://twitter.com/godarthvader)
 - [GitHub](https://github.com/carlesloriente)
 
-Notes on Cloud Computing Blog for [Bootstrap 5](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat). And is based on the [Start Bootstrap](https://startbootstrap.com) created by [David Miller](https://twitter.com/davidmillerskt).
+Notes on Cloud Computing Blog for [Bootstrap 5](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
 ## Copyright and License
 
