@@ -1,4 +1,4 @@
 ---
-title: post
+title: myblog
 layout: tag
 ---

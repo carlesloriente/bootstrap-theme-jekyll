@@ -25,7 +25,7 @@ test_fail() {
 
 build_site() {
   echo "Building local site: "
-  cp -R node_modules/nocc-bootstrap-theme/ assets/vendor/nocc-bootstrap-theme/ && JEKYLL_ENV=development bundle exec jekyll build --incremental --verbose --destination _site_local --config _config.yml && ruby bin/webserver.rb
+  cp -TR node_modules/nocc-bootstrap-theme assets/vendor/nocc-bootstrap-theme/ && JEKYLL_ENV=development bundle exec jekyll build --incremental --verbose --destination _site_local --config _config.yml && ruby bin/webserver.rb
 }
 
 test_bin

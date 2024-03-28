@@ -3,7 +3,8 @@ layout: default
 tagsindex: true
 ---
 
-<header class="masthead" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(0,0,0,0.5) 100%), url('{{ page.background }}')">
+<main class="flex-shrink-0">
+<section class="masthead" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(0,0,0,0.5) 100%), url('{{ page.background }}')">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -17,18 +18,20 @@ tagsindex: true
       </div>
     </div>
   </div>
-</header>
-<main class="flex-shrink-0">
-  <div class="container my-5">
+</section>
+<section>
+  <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="text-align-center">
         <script type="text/javascript" src="{{"/assets/vendor/nocc-bootstrap-theme/js/jquery/3.7.1/jquery.min.js" | relative_url }}"></script>
         <script type="text/javascript" src="{{"/assets/vendor/nocc-bootstrap-theme/js/jquery/jqcloud/2.0.3/jqcloud.min.js" | relative_url }}"></script>
-        <div class="wordcloud" style="height: 400px; width: 90%"></div>
+        <div class="wordcloud"></div>
       </div>
     </div>
   </div>
   <div class="home-divider"></div>
+</section>
+<section>
   <div class="container my-5">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
@@ -41,7 +44,10 @@ tagsindex: true
           {%- endfor %}
         </ul>
         <script type="text/javascript">
-          $(document).ready(function () {
+          $(document).ready(tagscloud);
+          $(window).on('resize',tagscloud);
+          function tagscloud() {
+            $('.wordcloud').jQCloud('destroy');
             var tags = [];
             {%- for tag in site.post_tags -%}
               {% assign tag_slug = tag.title | sluggify %}
@@ -54,11 +60,13 @@ tagsindex: true
               });
             {%- endfor -%}
             $('.wordcloud').jQCloud(tags, {
-              'shape': 'rectangular'
-            });
-          });
+              'shape': 'rectangular',
+              'autoresize': true
+            }
+          )};
         </script>
       </div>
     </div>
   </div>
+  </section>
 </main>

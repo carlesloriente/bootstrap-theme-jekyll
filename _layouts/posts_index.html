@@ -2,10 +2,11 @@
 layout: default
 ---
 
+<main class="flex-shrink-0">
 {% if page.background %}
-<header class="masthead sechead" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(0,0,0,0.5) 100%), url('{{ page.background }}')">
+<section class="masthead sechead" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(0,0,0,0.5) 100%), url('{{ page.background }}')">
 {% else %}
-<header class="masthead sechead">
+<section class="masthead sechead">
 {% endif %}
   <div class="overlay"></div>
   <div class="container">
@@ -17,8 +18,8 @@ layout: default
       </div>
     </div>
   </div>
-</header>
-<main class="flex-shrink-0">
+</section>
+<section>
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
@@ -28,4 +29,5 @@ layout: default
     </div>
   </div>
   <div class="divider"></div>
+</section>
 </main>

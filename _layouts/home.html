@@ -2,14 +2,15 @@
 layout: default
 ---
 
+<main class="flex-shrink-0">
 {% if page.carousel %}
   {% include carousel.html %}
 {% else %}
-  <header class="masthead" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(100, 100, 100, 0.5) 10%), url('{{ page.background }}')">
+  <section class="masthead" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(100, 100, 100, 0.5) 10%), url('{{ page.background }}')">
   <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="mx-auto">
           <div class="page-heading">
           {% if page.title %}
             <h1>{{ page.title }}</h1>
@@ -24,63 +25,68 @@ layout: default
     </div>
   </div>
   {% endif %}
-</header>
-<main class="flex-shrink-0">
+  </section>
 {%- if site.landing == true %}
-  <div class="container my-5">
-    <div class="row align-items-center rounded-hero border shadow-lg">
-      <div class="col-lg-8 p-3 p-lg-5">
-        {{ content }}
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-          <a id="download" class="btn btn-download px-4 me-md-2 fw-bold" href="{{ site.theme_download }}" aria-label="Download" target="_blank" role="button">Download</a>
-          <a class="btn btn-secondary px-4" href="{{ site.theme_repo }}" aria-label="GitHub Repository" target="_blank" role="button">Source Code</a>
-          <a class="btn btn-tertiary px-4" href="{{ site.theme_package }}" aria-label="Nocc NPM package" target="_blank" role="button">NPM Package</a>
-        </div>
-      </div>
-      <div class="col-lg-4 p-0 overflow-hidden shadow-lg">
-        <img class="rounded-lg-3" src="{{ site.theme_logo }}" alt="NOCC Bootstrap theme logo" width="410">
-      </div>
-    </div>
-  </div>
-  <div class="home-divider"></div>
-  {% include_relative features.html %}
-{% else %}
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-lg-10">
-        {{ content }}
-      </div>
-    </div>
-  </div>
-  <div class="home-divider"></div>
-{% endif -%}
-  <div id="post-cards" class="container py-5">
-    <h2 class="pb-2 border-bottom">Recent posts</h2>
-    <div class="post-card row">
-    {% assign sorted = site.blog | sort: 'date' | reverse %}
-    {%- for post in sorted limit : 3 %}
-      <div class="col">
-        <div class="card h-100 overflow-hidden card-shadow" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(100, 100, 100, 0.5) 10%), url('{{ post.background }}')">
-          <div class="d-flex flex-column h-100 p-5 text-white">
-            <small>on {{ post.date | date: '%B %d, %Y' }}</small>
-            <h2 class="pt-5 mt-5">{{ post.title }}</h2>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto float-end">
-                <small><a href="{{ post.url | relative_url }}" class="stretched-link" hreflang="{{ site.lang }}" aria-label="{{ post.title | escape }}"><img role="img" class="filter-white" alt="" aria-label="" src="/assets/vendor/nocc-bootstrap-theme/icons/1.11.0/link-45deg.svg" width="25em" height="25em">
-                </a></small>
-              </li>
-              {%- if post.tags %}
-              {% for tag in post.tags limit : 2 -%}
-              <li class="d-flex align-items-center me-3">
-                <span class="badge">#{{ tag }}</span>
-              </li>
-              {%- endfor %}
-              {%- endif %}
-            </ul>
+  <section>
+    <div class="container my-5">
+      <div class="row align-items-center rounded-hero border shadow-lg">
+        <div class="col-lg-8 p-3 p-lg-5">
+          {{ content }}
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <a id="download" class="btn btn-download px-4 me-md-2 fw-bold" href="{{ site.theme_download }}" aria-label="Download" target="_blank" role="button">Download</a>
+            <a class="btn btn-secondary px-4" href="{{ site.theme_repo }}" aria-label="GitHub Repository" target="_blank" role="button">Source Code</a>
+            <a class="btn btn-tertiary px-4" href="{{ site.theme_package }}" aria-label="Nocc NPM package" target="_blank" role="button">NPM Package</a>
           </div>
         </div>
+        <div class="col-lg-4 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src="{{ site.theme_logo }}" alt="NOCC Bootstrap theme logo" width="410">
+        </div>
       </div>
-    {% endfor -%}
     </div>
-  </div>
+    <div class="home-divider"></div>
+  </section>
+  {% include_relative features.html %}
+{% else %}
+  <section>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-10">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    <div class="home-divider"></div>
+  </section>
+{% endif -%}
+  <section>
+    <div id="post-cards" class="container py-5">
+      <h2 class="pb-2 border-bottom">More information</h2>
+      <div class="post-card row">
+      {% assign sorted = site.blog | sort: 'date' | reverse %}
+      {%- for post in sorted limit : 3 %}
+        <div class="col">
+          <div class="card h-100 overflow-hidden card-shadow" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(100, 100, 100, 0.5) 10%), url('{{ post.background }}')">
+            <div class="d-flex flex-column h-100 p-5 text-white">
+              <small>on {{ post.date | date: '%B %d, %Y' }}</small>
+              <h2 class="pt-5 mt-5">{{ post.title }}</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto float-end">
+                  <small><a href="{{ post.url | relative_url }}" class="stretched-link" hreflang="{{ site.lang }}" aria-label="{{ post.title | escape }}"><img role="img" class="filter-white" alt="" aria-label="" src="/assets/vendor/nocc-bootstrap-theme/icons/1.11.0/link-45deg.svg" width="25em" height="25em">
+                  </a></small>
+                </li>
+                {%- if post.tags %}
+                {% for tag in post.tags limit : 2 -%}
+                <li class="d-flex align-items-center me-3">
+                  <span class="badge">#{{ tag }}</span>
+                </li>
+                {%- endfor %}
+                {%- endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      {% endfor -%}
+      </div>
+    </div>
+  </section>
 </main>

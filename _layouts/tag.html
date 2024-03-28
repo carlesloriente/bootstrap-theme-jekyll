@@ -2,37 +2,34 @@
 layout: default
 ---
 
-<header class="smallhead sechead"></header>
-
 <main class="flex-shrink-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-
-        <article class="post">
-          <header class="post-header">
-            <h1 class="post-title">Posts with tag #{{ page.title | escape }}</h1>
-          </header>
-          <div class="post-content">
-            {{ content }}
-            {%- assign tag = page.title -%}
-            {% assign tag_posts = site.blog -%}
-            <p class="fw-bolder text-uppercase">Number of articles: {{ tag_posts | size }}</p>
-            <ul class="post-list">
-              {% for post in tag_posts -%}
-              <li>
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                <p>
-                  <a href="{{ post.url | relative_url }}" hreflang="{{ site.lang }}" aria-label="{{ post.title | escape }}">{{ post.title | escape }}</a>
-                </p>
-              </li>
-              {% endfor -%}
-            </ul>
-            <p>Browse more <a href="/tags" hreflang="{{ site.lang }}" aria-label="Tags index">tags</a>.</p>
-          </div>
-        </article>
+<section class="smallhead sechead"></section>
+<section>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-header">
+          <h1 class="post-title">Posts with tag #{{ page.title | escape }}</h1>
+        </div>
+        <div class="post-content">
+          {{ content }}
+          <p class="fw-bolder text-uppercase">Number of articles: {{ site.blog | where_exp: 'blog', 'blog.tags contains page.title' | size }}</p>
+          <ul class="post-list">
+            {% assign tagpost = site.blog | where_exp: 'blog', 'blog.tags contains page.title' %}</p>
+            {%- for tag in tagpost -%}
+            <li>
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              <p>
+                <a href="{{ tag.url | relative_url }}" hreflang="{{ site.lang }}" aria-label="{{ tag.title | escape }}">{{ tag.title | escape }}</a>
+              </p>
+            </li>
+            {%- endfor -%}
+          </ul>
+          <p>Browse more <a href="/tags" hreflang="{{ site.lang }}" aria-label="Tags index">tags</a>.</p>
+        </div>
       </div>
     </div>
   </div>
   <div class="divider"></div>
+</section>
 </main>

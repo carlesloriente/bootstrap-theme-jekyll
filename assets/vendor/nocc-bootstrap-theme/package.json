@@ -1,6 +1,6 @@
 {
   "name": "nocc-bootstrap-theme",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "NOCC A responsive Bootstrap 5 theme",
   "scripts": {
     "dist": "./scripts/dist",
