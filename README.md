@@ -2,8 +2,8 @@
 
 ![NOCC Jekyll Bundle webshots](/assets/images/nocc-showcase.webp)
 
-[NOCC Jekyll Bundle](https://bootstrap-theme.notesoncloudcomputing.com/). A fully featured bundle site for [Jekyll](https://jekyllrb.com/){:target="_blank"} created by [Carles Loriente](https://github.com/carlesloriente).
-Features a homepage, about page, tags cloud page, gallery of images page, examples post pages with comments powered by [Disqus](https://disqus.com/){:target="_blank"} and a contact form powered by [Formspree](https://formspree.io/){:target="_blank"}.
+[NOCC Jekyll Bundle](https://bootstrap-theme.notesoncloudcomputing.com/). A fully featured bundle site for [Jekyll](https://jekyllrb.com/) created by [Carles Loriente](https://github.com/carlesloriente).
+Features a homepage, about page, tags cloud page, gallery of images page, examples post pages with comments powered by [Disqus](https://disqus.com/) and a contact form powered by [Formspree](https://formspree.io/).
 Using the [NOCC Bootstrap theme](https://www.npmjs.com/nocc-bootstrap-theme) npm package.
 
 ## Features
@@ -47,7 +47,7 @@ Just follow the instructions below, and then you can change the content of the p
    - `description`
    - `full_description` (Setting for the theme landing site, please set to `false`)
    - `gh_repository` (Optional; if not needed, comment it out)
-   - `email` (Set to a working email address, and then if you want to enable the contact form, create a free account at [Formspree](https://formspree.io){:target="_blank"})
+   - `email` (Set to a working email address, and then if you want to enable the contact form, create a free account at [Formspree](https://formspree.io))
    - `formemail` (fill in with your Formspree code; after that, fill out and send the form on the contact page, check your email and verify if you are receiving the messages)
    - `twitter_username` (Optional; if not needed, comment it out)
    - `github_username` (Optional; if not needed, comment it out)
@@ -57,7 +57,7 @@ Just follow the instructions below, and then you can change the content of the p
    - `kofi` (Optional; if not needed, comment it out)
    - `google_site_verification` (Optional; if not needed, comment it out)
    - `google_analytics` (Optional; if not needed, comment it out)
-   - `disqus_shortname` (To enable the comments feature, create a free account at [Disqus](https://disqus.com){:target="_blank"}, and fill in with your Disqus shortname, if not needed; comment it out)
+   - `disqus_shortname` (To enable the comments feature, create a free account at [Disqus](https://disqus.com), and fill in with your Disqus shortname, if not needed; comment it out)
 
 ### Add your content
 
