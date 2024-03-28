@@ -1,7 +1,19 @@
-# NOCC A Responsive Bootstrap 5 dual Theme
+---
+title: "NOCC Bootstrap Theme NPM package"
+layout: post
+comments: false
+date: 2024-03-25 11:10:45 +0200
+categories: nocc npm
+tags:
+- NOCC
+- npm
+background: '/assets/images/bg-index.webp'
+---
 
-![NOCC Logo](src/images/nocc/nocc-theme-showroom.png)
+{:.text-center .img-fluid}
+[![NOCC NPM Package](/assets/vendor/nocc-bootstrap-theme/images/nocc/nocc-theme-showroom.png)](https://www.npmjs.com/package/nocc-bootstrap-theme)
 
+{:.text-center}
 [![npm version](https://badge.fury.io/js/nocc-bootstrap-theme.svg)](https://badge.fury.io/js/nocc-bootstrap-theme)
 
 This theme is a complete replacement for Bootstrap 5.3.3. You only need to include `nocc-theme.css` or `nocc-theme.min.css`.
@@ -30,11 +42,11 @@ Just follow the instructions below.
   npm install nocc-bootstrap-theme --save
 ```
 
-- The `css/nocc-theme.css` (or the minified `nocc-theme.min.css`) file loads the font files, icon files, JavaScript files and image files.
+- The `css/nocc-theme.css` (or the minified `nocc-theme.min.css`) file loads the font, icon, JavaScript, and image files.
 
 ## Customize it
 
-You can change or use this theme in your own Sass code, please download de source code from the [GitHub repository](https://github.com/carlesloriente/nocc-bootstrap-theme) and change it.
+You can change or use this theme in your own Sass code. Please download de source code from the [GitHub repository](https://github.com/carlesloriente/nocc-bootstrap-theme) and change it.
 
 ### Setup
 

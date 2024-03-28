@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*!
- * MOCC Bootstrap theme (https://github.com/carlesloriente/nocc-bootstrap-theme/)
+ * NOCC Bootstrap theme 1.0.6 (https://github.com/carlesloriente/nocc-bootstrap-theme/)
  * Copyright 2024 Carles Loriente
- * A responsive dual color theme for Bootstrap 5
+ * A Responsive Bootstrap 5 dual Theme
  */
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
@@ -80,7 +80,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-font-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: "Oxygen Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(33, 37, 41, 0.75), rgba(33, 37, 41, 0));
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: "Lora", "Times New Roman", "Georgia", "Palatino", "Baskerville", -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-body-font-size: 1.1rem;
   --bs-body-font-weight: 400;
@@ -388,7 +388,7 @@ pre {
   margin-bottom: 1rem;
   overflow: auto;
   font-size: 87.5%;
-  color: #212529;
+  color: #495057;
 }
 pre code {
   font-size: inherit;
@@ -5923,8 +5923,8 @@ textarea.form-control-lg {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
+  width: 1rem;
+  height: 1rem;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
@@ -11299,11 +11299,6 @@ body {
   height: 100%;
 }
 
-.pb-5,
-.py-5 {
-  padding-bottom: 1rem;
-}
-
 .d-flex {
   display: flex;
 }
@@ -11369,7 +11364,7 @@ blockquote {
 
 .section-heading {
   margin-top: 60px;
-  font-size: 36px;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
@@ -11381,8 +11376,20 @@ blockquote {
   padding: 10px;
   text-align: center;
   color: var(--bs-secondary-color);
-  font-size: 14px;
+  font-size: 0.8rem;
   font-style: italic;
+}
+
+pre {
+  margin: 1rem 0 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.6rem;
+  background-color: #000;
+  padding: 1.3rem 0;
+  font-size: 87.5%;
+}
+pre code {
+  color: var(--bs-code-color);
 }
 
 .border {
@@ -11465,6 +11472,19 @@ small a:focus, .small a:focus, small a:hover, .small a:hover {
 
 .item .active {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+}
+
+.fixed-bottom-footer {
+  position: fixed;
+  right: 0;
+  bottom: 320px;
+  left: 0;
+  z-index: 1030;
+}
+
+.post-content {
+  position: fixed;
+  z-index: 1050;
 }
 
 .align-baseline {
@@ -12396,6 +12416,12 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 .carousel button {
   z-index: 999;
 }
+.carousel .carousel-inner img {
+  height: 35vh;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
 .carousel :hover .carousel-control-prev,
 .carousel :hover .carousel-control-next {
   visibility: visible;
@@ -12404,19 +12430,6 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
   background: none;
   text-decoration: none;
   color: #007bff;
-}
-
-.carousel-inner {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-}
-.carousel-inner::after {
-  display: block;
-  clear: both;
-  content: "";
 }
 
 .carousel-item {
@@ -12529,8 +12542,8 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 .carousel-control-next-icon {
   display: inline-block;
   background: 50%/100% 100% no-repeat;
-  width: 3rem;
-  height: 3rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .carousel-control-prev-icon {
@@ -12563,6 +12576,7 @@ nav {
 }
 nav .navbar-brand {
   text-decoration: none;
+  text-shadow: 1px 1px #fff;
   color: #343a40;
   font-size: medium;
   font-weight: 800;
@@ -12571,7 +12585,7 @@ nav .navbar-toggler {
   padding: 13px;
   text-transform: uppercase;
   color: #343a40;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 800;
 }
 nav .nav-item a {
@@ -12580,7 +12594,7 @@ nav .nav-item a {
   text-shadow: 1px 1px #fff;
   letter-spacing: 1px;
   color: #212529;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 800;
 }
 nav .nav-item a:focus, nav .nav-item a:hover {
@@ -12600,6 +12614,7 @@ nav .nav-item:last-child {
   nav .navbar-brand {
     padding: 10px 20px;
     text-decoration: none;
+    text-shadow: 1px 1px #000;
     color: #fff;
     font-size: large;
   }
@@ -12607,7 +12622,7 @@ nav .nav-item:last-child {
     color: rgba(255, 255, 255, 0.7);
   }
   nav .nav-item {
-    padding: 10px 20px;
+    padding: 5px 10px;
   }
   nav .nav-item a {
     text-transform: uppercase;
@@ -12615,7 +12630,7 @@ nav .nav-item:last-child {
     text-shadow: 1px 1px #000;
     letter-spacing: 1px;
     color: #fff;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 800;
   }
   nav .nav-item a:focus, nav .nav-item a:hover {
@@ -12639,6 +12654,15 @@ nav .nav-item:last-child {
   }
   nav.is-visible {
     transform: translate3d(0, 100%, 0);
+  }
+}
+
+.navbar {
+  height: auto;
+}
+@media only screen and (min-width: 990px) {
+  .navbar {
+    height: 4rem;
   }
 }
 
@@ -12843,7 +12867,7 @@ small,
   margin-bottom: 0;
   border-bottom: 1px solid #dee2e6;
   padding-bottom: 0.5em;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {
@@ -12866,7 +12890,7 @@ small,
   z-index: 0;
   margin: 0;
   line-height: 1.764705882em;
-  font-size: 0.85em;
+  font-size: 0.8em;
 }
 .floating-label-form-group .help-block {
   margin: 15px 0;
@@ -12909,14 +12933,16 @@ form .form-group :first-child {
   font-size: 0.875rem;
 }
 
-header.masthead {
+section.masthead {
   position: relative;
   background: no-repeat center;
   background-attachment: scroll;
   background-color: transparent;
   background-size: cover;
+  width: 100%;
+  height: 22vh;
 }
-header.masthead .overlay {
+section.masthead .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -12924,98 +12950,103 @@ header.masthead .overlay {
   z-index: -20;
   background-color: var(--bs-overlay-bg);
   width: 100%;
-  height: 100%;
+  height: 22vh;
 }
-header.masthead .page-heading,
-header.masthead .post-heading,
-header.masthead .site-heading {
-  padding: 200px 0 150px;
+@media only screen and (min-width: 990px) {
+  section.masthead.masthead {
+    height: 28vh;
+  }
+  section.masthead.masthead .overlay {
+    height: 28vh;
+  }
+}
+section.masthead .page-heading,
+section.masthead .post-heading {
+  padding: 8rem 0;
   text-align: center;
   text-transform: lowercase;
   color: #fff;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-@media only screen and (min-width: 768px) {
-  header.masthead .page-heading,
-  header.masthead .post-heading,
-  header.masthead .site-heading {
-    padding: 200px 0;
+@media only screen and (min-width: 990px) {
+  section.masthead .page-heading,
+  section.masthead .post-heading {
     color: #fff;
   }
 }
-header.masthead .page-heading::first-letter,
-header.masthead .post-heading::first-letter,
-header.masthead .site-heading::first-letter {
+section.masthead .page-heading::first-letter,
+section.masthead .post-heading::first-letter {
   text-transform: uppercase;
 }
-header.masthead .page-heading h1, header.masthead .page-heading .h1,
-header.masthead .site-heading h1,
-header.masthead .site-heading .h1 {
+section.masthead .page-heading h1, section.masthead .page-heading .h1 {
   margin-top: 0;
   color: #fff;
-  font-size: 50px;
+  font-size: 2rem;
   font-weight: 900;
 }
-header.masthead .page-heading .subheading,
-header.masthead .site-heading .subheading {
+section.masthead .page-heading .subheading {
   display: block;
   margin: 10px 0 0;
   line-height: 1.1;
   color: #fff;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 24px;
+  font-size: 1.2rem;
   font-weight: 300;
 }
-header.masthead .page-heading .subheading::first-letter,
-header.masthead .site-heading .subheading::first-letter {
+section.masthead .page-heading .subheading::first-letter {
   text-transform: uppercase;
 }
-@media only screen and (min-width: 768px) {
-  header.masthead .page-heading h1, header.masthead .page-heading .h1,
-  header.masthead .site-heading h1,
-  header.masthead .site-heading .h1 {
-    font-size: 80px;
+@media only screen and (min-width: 990px) {
+  section.masthead .page-heading h1, section.masthead .page-heading .h1 {
+    font-size: 4rem;
   }
-  header.masthead .page-heading .subheading,
-  header.masthead .site-heading .subheading {
-    font-size: 32px;
+  section.masthead .page-heading .subheading {
+    font-size: 2rem;
   }
 }
-header.masthead .post-heading h1, header.masthead .post-heading .h1 {
-  text-transform: lowercase;
-  font-size: 35px;
-}
-header.masthead .post-heading a {
+section.masthead .post-heading a {
   color: #fff;
 }
-header.masthead .post-heading .subheading {
+section.masthead .post-heading .subheading {
   display: block;
   margin: 10px 0 30px;
   line-height: 1.1;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
-header.masthead .post-heading .meta {
-  display: block;
-  line-height: 1.1;
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
+section.masthead .post-heading .tags-heading,
+section.masthead .post-heading .meta {
+  display: none;
 }
-header.sechead {
-  margin-bottom: 50px;
+@media only screen and (min-width: 990px) {
+  section.masthead .post-heading .tags-heading,
+  section.masthead .post-heading .meta {
+    display: block;
+    line-height: 1.1;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+  }
 }
-header.smallhead {
+section.sechead {
+  margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 990px) {
+  section.sechead {
+    margin-bottom: 3rem;
+  }
+}
+section.smallhead {
+  margin-bottom: 3rem;
   background-color: var(--bs-small-head-color);
   height: 65px;
 }
-header.homehead {
-  text-align: center;
+section.homehead {
   color: #fff;
 }
-header.homehead .overlay {
+section.homehead .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -13023,43 +13054,54 @@ header.homehead .overlay {
   z-index: 900;
   background-color: var(--bs-overlay-bg);
   width: 100%;
-  height: 100%;
+  height: 35vh;
 }
-header.homehead .page-heading {
+section.homehead .page-heading {
   position: absolute;
   z-index: 901;
   margin: auto;
-  padding: 17rem 0;
+  padding: 10rem 0;
   width: 100%;
   text-align: center;
   color: #fff;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-header.homehead .page-heading h1, header.homehead .page-heading .h1 {
-  margin-top: 0;
+section.homehead .page-heading h1, section.homehead .page-heading .h1 {
+  margin-top: 30px;
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 2rem;
   font-weight: 900;
 }
-header.homehead .page-heading .subheading {
+section.homehead .page-heading .subheading {
   display: block;
   margin: 10px 0 0;
   line-height: 1.1;
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: 300;
 }
-header.homehead .page-heading .subheading::first-letter {
+section.homehead .page-heading .subheading::first-letter {
   text-transform: uppercase;
 }
-@media only screen and (min-width: 768px) {
-  header.homehead .page-heading {
-    padding: 14rem 0;
+@media only screen and (min-width: 990px) {
+  section.homehead .page-heading {
+    padding: 6rem 0;
   }
-  header.homehead .page-heading h1, header.homehead .page-heading .h1 {
-    font-size: 80px;
+  section.homehead .page-heading h1, section.homehead .page-heading .h1 {
+    font-size: 4rem;
   }
-  header.homehead .page-heading .subheading {
-    font-size: 32px;
+  section.homehead .page-heading .subheading {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  section.homehead .page-heading {
+    padding: 6rem 0;
+  }
+  section.homehead .page-heading h1, section.homehead .page-heading .h1 {
+    font-size: 5rem;
+  }
+  section.homehead .page-heading .subheading {
+    font-size: 2.5rem;
   }
 }
 
@@ -13125,57 +13167,66 @@ header.homehead .page-heading .subheading::first-letter {
   width: 220px;
 }
 
+.wordcloud {
+  width: 100%;
+  height: 250px;
+}
+@media only screen and (min-width: 640px) {
+  .wordcloud {
+    height: 450px;
+  }
+}
+
 .jqcloud {
-  margin: -60px auto;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.jqcloud span .w10 {
+.jqcloud .w10 {
   color: #800026;
   font-size: 170%;
   font-weight: 900;
 }
-.jqcloud span .w9 {
+.jqcloud .w9 {
   color: #bd0026;
   font-size: 160%;
   font-weight: 900;
 }
-.jqcloud span .w8 {
+.jqcloud .w8 {
   color: #e31a1c;
   font-size: 150%;
   font-weight: 700;
 }
-.jqcloud span .w7 {
+.jqcloud .w7 {
   color: #fc4e2a;
   font-size: 140%;
   font-weight: 700;
 }
-.jqcloud span .w6 {
-  color: #fd8d3c;
+.jqcloud .w6 {
+  color: #795541;
   font-size: 130%;
   font-weight: 500;
 }
-.jqcloud span .w5 {
+.jqcloud .w5 {
   color: #feb24c;
   font-size: 120%;
   font-weight: 500;
 }
-.jqcloud span .w4 {
-  color: #fed976;
+.jqcloud .w4 {
+  color: #6d675b;
   font-size: 110%;
   font-weight: 300;
 }
-.jqcloud span .w3 {
-  color: #ffeda0;
+.jqcloud .w3 {
+  color: #69675e;
   font-size: 100%;
   font-weight: 300;
 }
-.jqcloud span .w2 {
-  color: #fff;
+.jqcloud .w2 {
+  color: #928b8b;
   font-size: 90%;
   font-weight: 300;
 }
-.jqcloud span .w1 {
-  color: #e1e1e1;
+.jqcloud .w1 {
+  color: #9e9999;
   font-size: 80%;
   font-weight: 300;
 }
