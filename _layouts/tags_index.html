@@ -3,70 +3,77 @@ layout: default
 tagsindex: true
 ---
 
-<main class="flex-shrink-0">
-<section class="masthead" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(0,0,0,0.5) 100%), url('{{ page.background }}')">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="page-heading">
-          <h1>{{ page.title }}</h1>
-          {% if page.subtitle -%}
-          <span class="subheading">{{ page.subtitle }}</span>
-          {%- endif %}
+  <main class="flex-shrink-0">
+    <section class="masthead" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(0,0,0,0.5) 100%), url('{{ page.background }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>{{ page.title }}</h1>
+              {% if page.subtitle -%}
+              <span class="subheading">{{ page.subtitle }}</span>
+              {%- endif %}
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="text-align-center">
-        <script type="text/javascript" src="{{"/assets/vendor/nocc-bootstrap-theme/js/jquery/3.7.1/jquery.min.js" | relative_url }}"></script>
-        <script type="text/javascript" src="{{"/assets/vendor/nocc-bootstrap-theme/js/jquery/jqcloud/2.0.3/jqcloud.min.js" | relative_url }}"></script>
-        <div class="wordcloud"></div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="text-align-center">
+            <script type="text/javascript" src="{{ '/assets/vendor/nocc-bootstrap-theme/js/jquery/3.7.1/jquery.min.js' | relative_url }}"></script>
+            <script type="text/javascript" src="{{ '/assets/vendor/nocc-bootstrap-theme/js/jquery/jqcloud/2.0.3/jqcloud.min.js' | relative_url }}"></script>
+            <div class="wordcloud"></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="home-divider"></div>
-</section>
-<section>
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <h4>Archive</h4>
-        <ul class="tag-list">
-          {%- for tag in site.post_tags %}
-          <li>
-            <a href="{{ tag.url }}" hreflang="{{ site.lang }}" aria-label="{{ tag.title }}">{{tag.title}} ({{ site.blog | where_exp: 'blog', 'blog.tags contains tag.title' | size }})</a>
-          </li>
-          {%- endfor %}
-        </ul>
-        <script type="text/javascript">
-          $(document).ready(tagscloud);
-          $(window).on('resize',tagscloud);
-          function tagscloud() {
-            $('.wordcloud').jQCloud('destroy');
-            var tags = [];
-            {%- for tag in site.post_tags -%}
-              {% assign tag_slug = tag.title | sluggify %}
-              {% assign weight = site.blog | where_exp: 'blog', 'blog.tags contains tag.title' | size %}
-              {%- assign title = tag_slug -%}
-              tags.push({
-                text: "{{ title }}",
-                weight: '{{ weight }}',
-                link: '{% include tag_url tag=title %}'
-              });
-            {%- endfor -%}
-            $('.wordcloud').jQCloud(tags, {
-              'shape': 'rectangular',
-              'autoresize': true
-            }
-          )};
-        </script>
+      <div class="home-divider"></div>
+    </section>
+    <section>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <h4>Archive</h4>
+            <ul class="tag-list">
+              {% assign tags_list = "" | split: ',' %}
+              {%- for page in site.posts %}
+                {%- for tag in page.tags %}
+                  {% assign tags_list = tags_list | push: tag %}
+                {%- endfor %}
+              {%- endfor %}
+              {% assign tags_uniq = tags_list | uniq | sort %}
+              {%- for tag in tags_uniq %}
+                {% assign tag_count = site.posts | where_exp: 'posts', 'posts.tags contains tag' %} 
+                <li>
+                  <a href="{{ tag | append: '/' }}" hreflang="{{ site.lang }}" aria-label="{{ tag }}">{{ tag }} ({{ tag_count | size }})</a>
+                </li>
+              {%- endfor %}
+            </ul>
+            <script type="text/javascript">
+              $(document).ready(tagscloud);
+              $(window).on('resize',tagscloud);
+              function tagscloud() {
+                $('.wordcloud').jQCloud('destroy');
+                var tags = [];
+                {%- for tag in tags_uniq -%}
+                  {% assign weight = site.posts | where_exp: 'posts', 'posts.tags contains tag' | size %}
+                  {%- assign name = tag -%}
+                  tags.push({
+                    text: "{{ name }}",
+                    weight: '{{ weight }}',
+                    link: { href:'{{ site.tags_dir | append: '/' | append: name | append: '/' | relative_url }}', title: '{{ tag }}' }
+                  });
+                {%- endfor -%}
+                $('.wordcloud').jQCloud(tags, {
+                  'shape': 'rectangular',
+                  'autoresize': true
+                }
+              )};
+            </script>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  </section>
-</main>
+    </section>
+  </main>

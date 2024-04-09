@@ -4,7 +4,7 @@ sitemap: false
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {%- for post in site.blog -%}
+  {%- for post in site.posts -%}
     {% unless post.published == false %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
@@ -29,7 +29,7 @@ sitemap: false
     {%- endunless %}
   {%- endfor -%}
   {%- for page in site.pages -%}
-    {% unless page.sitemap == false or page.name contains ".xml" or page.name contains ".json" or page.name == "/assets/css/style.css" %}
+    {% unless page.sitemap == false or page.name contains ".xml" or page.name contains ".json" or page.name == "/assets/css/styles.css" %}
     <url>
       <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
       {%- if page.sitemap.lastmod %}

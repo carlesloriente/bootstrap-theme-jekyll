@@ -1,4 +1,0 @@
----
-title: myblog
-layout: tag
----

@@ -1,7 +1,8 @@
 landing                 : true
 title                   : A Bootstrap 5 theme
-author                  : Demo Website
+author                  : Carles Loriente
 url                     : "https://bootstrap-theme.notesoncloudcomputing.com"
+baseurl                 : "/"
 timezone                : "Europe/Madrid"
 description             : A responsive Bootstrap 5 dual theme
 full_description        : >
@@ -17,9 +18,11 @@ permalink               : pretty
 critical_css            : false
 
 # Theme Notice (please don't remove it ;))
-theme_version           : v.1.0.6
+theme_version           : v.1.0.7
 theme_name              : NOCC Bootstrap Theme
-theme_repo              : https://github.com/carlesloriente/bootstrap-theme-jekyll/
+theme_bundle_repo       : https://github.com/carlesloriente/bootstrap-theme-jekyll/
+theme_repo              : https://github.com/carlesloriente/nocc-bootstrap-theme/
+theme_url               : https://bootstrap-theme.notesoncloudcomputing.com/
 theme_author            : Carles Loriente
 theme_author_url        : https://www.notesoncloudcomputing.com/about/
 theme_download          : https://github.com/carlesloriente/bootstrap-theme-jekyll/archive/refs/heads/main.zip
@@ -44,15 +47,17 @@ google_analytics        : G-SM4Q43P2BB
 # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
 disqus_shortname        : notes-on-cloud-infrastructure
 
-layouts_dir             : _layouts
 data_dir                : _data
 includes_dir            : _includes
+layouts_dir             : _layouts
+plugins_dir             : _plugins
+tags_dir                : tags
 
 collections:
-  blog:
+  posts:
     permalink           : /posts/:name/
     output              : true
-  post_tags:
+  tags:
     permalink           : /tags/:name/
     output              : true
 
@@ -62,11 +67,6 @@ defaults:
       type              : posts
     values:
       layout            : post
-  - scope:
-      path              : "post_tags"
-      type              : tags
-    values:
-      layout            : tag
   - scope:
       path              : 'assets/**'
     values:
@@ -90,6 +90,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-redirect-from
+  - jekyll-debug
 
 sass:
   load_paths:
@@ -97,5 +98,6 @@ sass:
     - ./includes
     - ./node_modules/bootstrap/scss
     - ./assets/vendor/nocc-bootstrap-theme/styles
+  style                 : compressed
 
 exclude: ["AUTHORS.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md", "LICENSE", "README.md", "SECURITY.md", "techstack.md", "techstack.yml", "WORKFLOW.md", "bin", "Gemfile", "Gemfile.lock", "manifest.webmanifest", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
