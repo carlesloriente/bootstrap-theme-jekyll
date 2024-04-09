@@ -3,11 +3,11 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape | page.title }}{% elsif page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape | page.title }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape | page.title }}{% endif %}">
   <meta name="google-site-verification" content="{{ site.google_site_verification }}">
-  {% if site.twitter_username %}
+  {%- if site.twitter_username %}
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="{{ site.twitter_username }}">
   <meta name="twitter:creator" content="{{ site.twitter_username }}">
-  {% endif %}
+  {% endif -%}
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:title" content="{{ page.title | escape }}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape | page.title }}{% elsif page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape | page.title }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape | page.title }}{% endif %}">
@@ -21,12 +21,12 @@
   {{ critical | scssify }}
   </style>
 {% else %}
-  <link rel="stylesheet" href="{{"/assets/vendor/nocc-bootstrap-theme/css/nocc-theme.css" | relative_url }}" type="text/css">
+  <link rel="stylesheet" href="{{ '/assets/vendor/nocc-bootstrap-theme/css/nocc-theme.css' | relative_url }}" type="text/css">
 {% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <link rel="shortcut icon" href="{{"/assets/images/favicon.ico" | relative_url }}">
-  <link rel="icon" href="{{"/assets/images/favicon.ico" | relative_url }}" sizes="any">
-  <link rel="icon" href="{{"/assets/images/favicon.svg" | relative_url }}" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="{{"/assets/images/favicon.png" | relative_url }}" type="image/png">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ 'feed.xml' | relative_url }}">
+  <link rel="shortcut icon" href="{{ '/assets/vendor/nocc-bootstrap-theme/images/favicon.ico' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/vendor/nocc-bootstrap-theme/images/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="icon" href="{{ '/assets/vendor/nocc-bootstrap-theme/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ '/assets/vendor/nocc-bootstrap-theme/images/favicon.png' | relative_url }}" type="image/png">
   <link rel="manifest" href="/manifest.webmanifest">

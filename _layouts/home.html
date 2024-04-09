@@ -2,39 +2,38 @@
 layout: default
 ---
 
-<main class="flex-shrink-0">
-{% if page.carousel %}
-  {% include carousel.html %}
-{% else %}
+  <main class="flex-shrink-0">
+{%- if page.carousel %}
+{% include carousel.html %}
+{% else -%}
   <section class="masthead" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(100, 100, 100, 0.5) 10%), url('{{ page.background }}')">
-  <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="mx-auto">
-          <div class="page-heading">
-          {% if page.title %}
-            <h1>{{ page.title }}</h1>
-          {% else %}
-            <h1>{{ site.title }}</h1>
-          {% endif %}
-          {% if site.description %}
-            <h2 class="subheading">{{ site.description }}</h2>
-          {% endif %}
+    <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="mx-auto">
+            <div class="page-heading">
+            {%- if page.title %}
+              <h1>{{ page.title }}</h1>
+            {% else -%}
+              <h1>{{ site.title }}</h1>
+            {% endif %}
+            {%- if site.description %}
+              <h2 class="subheading">{{ site.description }}</h2>
+            {% endif -%}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  {% endif %}
   </section>
-{%- if site.landing == true %}
+{% endif -%}
+{% if site.landing == true %}
   <section>
     <div class="container my-5">
       <div class="row align-items-center rounded-hero border shadow-lg">
-        <div class="col-lg-8 p-3 p-lg-5">
-          {{ content }}
+        <div class="col-lg-8 p-3 p-lg-5">{{ content }}
           <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
             <a id="download" class="btn btn-download px-4 me-md-2 fw-bold" href="{{ site.theme_download }}" aria-label="Download" target="_blank" role="button">Download</a>
-            <a class="btn btn-secondary px-4" href="{{ site.theme_repo }}" aria-label="GitHub Repository" target="_blank" role="button">Source Code</a>
+            <a class="btn btn-secondary px-4" href="{{ site.theme_bundle_repo }}" aria-label="GitHub Repository" target="_blank" role="button">Source Code</a>
             <a class="btn btn-tertiary px-4" href="{{ site.theme_package }}" aria-label="Nocc NPM package" target="_blank" role="button">NPM Package</a>
           </div>
         </div>
@@ -57,12 +56,12 @@ layout: default
     </div>
     <div class="home-divider"></div>
   </section>
-{% endif -%}
+{% endif %}
   <section>
     <div id="post-cards" class="container py-5">
       <h2 class="pb-2 border-bottom">More information</h2>
       <div class="post-card row">
-      {% assign sorted = site.blog | sort: 'date' | reverse %}
+      {% assign sorted = site.posts | sort: 'date' | reverse %}
       {%- for post in sorted limit : 3 %}
         <div class="col">
           <div class="card h-100 overflow-hidden card-shadow" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)0%,rgba(100, 100, 100, 0.5) 10%), url('{{ post.background }}')">

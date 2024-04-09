@@ -13,9 +13,9 @@ layout: default
         </div>
         <div class="post-content">
           {{ content }}
-          <p class="fw-bolder text-uppercase">Number of articles: {{ site.blog | where_exp: 'blog', 'blog.tags contains page.title' | size }}</p>
+          <p class="fw-bolder text-uppercase">Number of articles: {{ site.posts | where_exp: 'posts', 'posts.tags contains page.title' | size }}</p>
           <ul class="post-list">
-            {% assign tagpost = site.blog | where_exp: 'blog', 'blog.tags contains page.title' %}</p>
+            {% assign tagpost = site.posts | where_exp: 'posts', 'posts.tags contains page.title' %}</p>
             {%- for tag in tagpost -%}
             <li>
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
@@ -25,7 +25,7 @@ layout: default
             </li>
             {%- endfor -%}
           </ul>
-          <p>Browse more <a href="/tags" hreflang="{{ site.lang }}" aria-label="Tags index">tags</a>.</p>
+          <p>Browse more <a href="{{ site.tags_dir | append: '/' | relative_url }}" hreflang="{{ site.lang }}" aria-label="Tags index">tags</a>.</p>
         </div>
       </div>
     </div>

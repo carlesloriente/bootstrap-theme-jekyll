@@ -22,8 +22,10 @@ layout: default
     </div>
   </div>
   <div class="row">
-    <div class="image-gallery">
-      {% include image.html folder="/assets/images/gallery" %}
+    <div class="mx-auto">
+      <div class="image-gallery">
+        {% include image.html folder="/assets/images/gallery" %}
+      </div>
     </div>
   </div>
 </div>
@@ -52,12 +54,12 @@ layout: default
         var modal = document.getElementById("image-gallery-image");
         modal.removeAttribute('src');
         modal.setAttribute('src', url);
+        modal.setAttribute("disabled", "");
         var title = document.getElementById("image-gallery-title");
         title.textContent = name;
-
       };
     }
   });
-</script> 
+</script>
 <div class="divider"></div>
 </section>

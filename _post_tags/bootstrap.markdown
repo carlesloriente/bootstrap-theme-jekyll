@@ -1,4 +1,0 @@
----
-title: bootstrap
-layout: tag
----

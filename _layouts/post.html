@@ -20,12 +20,12 @@ layout: default
           {%- if page.tags -%}
           <span class="tags-heading">
             {% for tag in page.tags %}
-              <a href="{% include tag_url tag=tag %}" hreflang="{{ site.lang }}" aria-label="{{ tag }}">#{{ tag }}</a>
+              <a href="{{ site.tags_dir  | append: '/' | append: tag | append: '/' | relative_url }}" hreflang="{{ site.lang }}" aria-label="{{ tag }}">#{{ tag }}</a>
             {% endfor %}
           </span>
           {%- endif -%}
           <span class="meta">Posted by
-            {% if page.author %} <a href="/about/" hreflang="{{ site.lang }}" aria-label="Author">{{ page.author }} </a> {% else %}<a href="/about/" hreflang="{{ site.lang }}" aria-label="Author">{{ site.author }} </a> {% endif %} 
+            {% if page.author %} <a href="{{ 'about/' | relative_url }}" hreflang="{{ site.lang }}" aria-label="Author">{{ page.author }} </a> {% else %}<a href="{{ 'posts/' | relative_url }}" hreflang="{{ site.lang }}" aria-label="Author">{{ site.author }} </a> {% endif %} 
             on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=page.content -%}</span>
         </div>
       </div>
@@ -40,7 +40,7 @@ layout: default
         <hr>
         <div class="text-center">
           <p><mark>Found a snippet that saved your day?</mark> Consider <a href="https://ko-fi.com/S6S1O2GTU" target="_blank" rel="noopener" title="Support me on ko-fi.com">dropping a tip!</a></p>
-          <script type="text/javascript" src="{{"/assets/vendor/nocc-bootstrap-theme/js/ko-fi/widget_2.min.js" | relative_url }}"></script>
+          <script type="text/javascript" src="{{ '/assets/vendor/nocc-bootstrap-theme/js/ko-fi/widget_2.min.js' | relative_url }}"></script>
           <script type="text/javascript">kofiwidget2.init("Buy me a coffee", "#176391", "S6S1O2GTU");kofiwidget2.draw();</script>
         </div>
         <hr>
