@@ -17,13 +17,6 @@ layout: default
           {%- if page.description %}
           <h2 class="subheading">{{ page.description }}</h2>
           {% endif -%}
-          {%- if page.tags -%}
-          <span class="tags-heading">
-            {% for tag in page.tags %}
-              <a href="{{ site.tags_dir  | append: '/' | append: tag | append: '/' | relative_url }}" hreflang="{{ site.lang }}" aria-label="{{ tag }}">#{{ tag }}</a>
-            {% endfor %}
-          </span>
-          {%- endif -%}
           <span class="meta">Posted by
             {% if page.author %} <a href="{{ 'about/' | relative_url }}" hreflang="{{ site.lang }}" aria-label="Author">{{ page.author }} </a> {% else %}<a href="{{ 'posts/' | relative_url }}" hreflang="{{ site.lang }}" aria-label="Author">{{ site.author }} </a> {% endif %} 
             on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=page.content -%}</span>

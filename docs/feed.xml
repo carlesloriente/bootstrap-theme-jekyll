@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://bootstrap-theme.notesoncloudcomputing.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bootstrap-theme.notesoncloudcomputing.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-04-09T18:09:27+02:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/feed.xml</id><title type="html">A Bootstrap 5 theme</title><subtitle>A responsive Bootstrap 5 dual theme</subtitle><author><name>Carles Loriente</name></author><entry><title type="html">NOCC Bootstrap Theme v1.2 released</title><link href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-04-09-nocc-bootstrap-theme-v1-2-0/" rel="alternate" type="text/html" title="NOCC Bootstrap Theme v1.2 released" /><published>2024-04-09T15:10:45+02:00</published><updated>2024-04-09T15:10:45+02:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/posts/nocc-bootstrap-theme-v1.2.0</id><content type="html" xml:base="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-04-09-nocc-bootstrap-theme-v1-2-0/"><![CDATA[<p class="text-center"><img src="/assets/images/nocc-theme-showroom.png" alt="NOCC Thene" class="img-fluid" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://bootstrap-theme.notesoncloudcomputing.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bootstrap-theme.notesoncloudcomputing.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-04-19T17:05:45+02:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/feed.xml</id><title type="html">A Bootstrap 5 theme</title><subtitle>A responsive Bootstrap 5 dual theme</subtitle><author><name>Carles Loriente</name></author><entry><title type="html">NOCC Bootstrap Theme v1.2 released</title><link href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-04-09-nocc-bootstrap-theme-v1-2-0/" rel="alternate" type="text/html" title="NOCC Bootstrap Theme v1.2 released" /><published>2024-04-09T15:10:45+02:00</published><updated>2024-04-09T15:10:45+02:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/posts/nocc-bootstrap-theme-v1.2.0</id><content type="html" xml:base="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-04-09-nocc-bootstrap-theme-v1-2-0/"><![CDATA[<p class="text-center"><img src="/assets/images/nocc-theme-showroom.png" alt="NOCC Thene" class="img-fluid" /></p>
 
 <p class="text-center"><strong>A Responsive Bootstrap 5 dual Theme</strong></p>
 
@@ -104,8 +104,6 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
   <li><strong>Static site with dynamic features</strong></li>
 </ol>
 
-<h2 id="how-it-works">How it works</h2>
-
 <h2 id="installation--configuration">Installation &amp; Configuration</h2>
 
 <p>Just follow the instructions below, and then you can change the content of the pages and site settings.</p>
@@ -114,22 +112,25 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
   <li><a href="https://github.com/carlesloriente/bootstrap-theme-jekyll/archive/refs/heads/main.zip">Download the package</a> or clone the project running the command:</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   git clone <span class="nt">--recursive</span> git@github.com:carlesloriente/bootstrap-theme-jekyll.git
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>git clone --recursive git@github.com:carlesloriente/bootstrap-theme-jekyll.git</code>
+</pre></div>
 
 <ol>
   <li>Install the NOCC npm package, run the command:</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  npm <span class="nb">install </span>nocc-bootstrap-theme <span class="nt">--save</span>
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>npm install nocc-bootstrap-theme --save</code>
+</pre></div>
 
 <ol>
   <li>Install Ruby Gems and other dependencies, run the command:</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sh bin/install.sh
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>sh bin/install.sh</code>
+</pre></div>
 
 <ol>
   <li>Update with your settings the configuration file <code class="language-plaintext highlighter-rouge">_config.yml</code>:
@@ -171,8 +172,9 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
 
 <p>Navigate to folder <code class="language-plaintext highlighter-rouge">bin/certs</code> and execute the following command to validate certs and update the CA trust DB.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl verify <span class="nt">-CAfile</span> ca_selfsigned.crt wildcard.local.crt <span class="o">&amp;&amp;</span> <span class="nb">sudo cp </span>ca_selfsigned.crt /etc/pki/ca-trust/source/anchors/ <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>update-ca-trust
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>openssl verify -CAfile ca_selfsigned.crt wildcard.local.crt &amp;&amp; sudo cp ca_selfsigned.crt /etc/pki/ca-trust/source/anchors/ &amp;&amp; sudo update-ca-trust</code>
+</pre></div>
 
 <ul>
   <li>Modify your /etc/hosts file adding <code class="language-plaintext highlighter-rouge">127.0.0.1 bootstrap-theme.local</code>. Depending on your setup, there will already be an entry for 127.0.0.1; add bootstrap-theme.local after the last argument.</li>
@@ -224,7 +226,11 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
 
 <h2 id="copyright-and-license">Copyright and License</h2>
 
-<p>Copyright (c) 2024 Carles Loriente. The code released under the <a href="https://github.com/carlesloriente/bootstrap-theme-jekyll/blob/master/LICENSE">MIT</a> license.</p>]]></content><author><name>Carles Loriente</name></author><category term="jekyll" /><category term="bootstrap" /><category term="theme" /><category term="nocc" /><category term="theme" /><category term="bootstrap" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">NOCC Bootstrap Theme NPM package</title><link href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-25-nocc-bootstrap-theme-npm/" rel="alternate" type="text/html" title="NOCC Bootstrap Theme NPM package" /><published>2024-03-25T10:10:45+01:00</published><updated>2024-03-25T10:10:45+01:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/posts/nocc-bootstrap-theme-npm</id><content type="html" xml:base="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-25-nocc-bootstrap-theme-npm/"><![CDATA[<p class="text-center img-fluid"><a href="https://www.npmjs.com/package/nocc-bootstrap-theme"><img src="/assets/vendor/nocc-bootstrap-theme/images/nocc/nocc-theme-showroom.png" alt="NOCC NPM Package" /></a></p>
+<p>Copyright (c) 2024 Carles Loriente. The code released under the <a href="https://github.com/carlesloriente/bootstrap-theme-jekyll/blob/master/LICENSE">MIT</a> license.</p>]]></content><author><name>Carles Loriente</name></author><category term="jekyll" /><category term="bootstrap" /><category term="theme" /><category term="nocc" /><category term="theme" /><category term="bootstrap" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">NOCC Bootstrap Theme NPM package</title><link href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-25-nocc-bootstrap-theme-npm/" rel="alternate" type="text/html" title="NOCC Bootstrap Theme NPM package" /><published>2024-03-25T10:10:45+01:00</published><updated>2024-03-25T10:10:45+01:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/posts/nocc-bootstrap-theme-npm</id><content type="html" xml:base="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-25-nocc-bootstrap-theme-npm/"><![CDATA[<p><strong>Are you tired of outdated Bootstrap themes?</strong> Say hello to NOCC 🎉: A Modern Bootstrap 5 Theme!</p>
+
+<p>An NPM Package that brings the power of NOCC directly to your NodeJS project. <a href="https://www.npmjs.com/package/nocc-bootstrap-theme">Get it now!</a>.</p>
+
+<p class="text-center img-fluid"><a href="https://www.npmjs.com/package/nocc-bootstrap-theme"><img src="/assets/vendor/nocc-bootstrap-theme/images/nocc/nocc-theme-showroom.png" alt="NOCC NPM Package" /></a></p>
 
 <p class="text-center"><a href="https://badge.fury.io/js/nocc-bootstrap-theme"><img src="https://badge.fury.io/js/nocc-bootstrap-theme.svg" alt="npm version" /></a></p>
 
@@ -252,10 +258,9 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
 
 <h2 id="installing">Installing</h2>
 
-<p>Just follow the instructions below.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  npm <span class="nb">install </span>nocc-bootstrap-theme <span class="nt">--save</span>
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>npm install nocc-bootstrap-theme --save</code>
+</pre></div>
 
 <ul>
   <li>The <code class="language-plaintext highlighter-rouge">css/nocc-theme.css</code> (or the minified <code class="language-plaintext highlighter-rouge">nocc-theme.min.css</code>) file loads the font, icon, JavaScript, and image files.</li>
@@ -274,8 +279,9 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
 
 <p>Then, you can also import the source files to your manifest (e.g. index.scss).</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">@import</span> <span class="s2">"nocc-bootstrap-theme/src/styles/main.scss"</span><span class="p">;</span>
-</code></pre></div></div>
+<div class="language-scss highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>@import "nocc-bootstrap-theme/src/styles/main.scss"</code>
+</pre></div>
 
 <p>If you need documentation or help with Bootstrap or its components in general, please head over to <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap documentation</a>.</p>
 
@@ -296,17 +302,20 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
 
 <p>Install node modules, run the command:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  npm <span class="nb">install</span>
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>npm install</code>
+</pre></div>
 
 <p>Build the distribution, run the command:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  npm run dist
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>npm run dist</code>
+</pre></div>
 
 <p>The dist structure looks like this:</p>
 
-<pre><code class="language-filesystem">nocc-bootstrap-theme/
+<div class="language-filesystem highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>nocc-bootstrap-theme/
 └─ fonts/
 └─ icons/
 └─ images/
@@ -316,20 +325,22 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
 |  └─ nocc-theme.min.css
 ├─ scripts/
 ├─ src/
-├─ static/
-</code></pre>
+└─ static/</code>
+</pre></div>
 
 <p>Now, let’s build the demo site, run the command:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  npm run build-demo
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>npm run build-demo</code>
+</pre></div>
 
 <p>The folder <code class="language-plaintext highlighter-rouge">demo</code> contains all the site files.</p>
 
 <p>To run the bundled web server, run the command:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  npm run server-watch
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>npm run server-watch</code>
+</pre></div>
 
 <p>The command incorporates a watcher, so you can write code and see your changes immediately in the browser.</p>
 
@@ -355,7 +366,7 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
 
 <h2 id="copyright-and-license">Copyright and License</h2>
 
-<p>Copyright (c) 2024 Carles Loriente. Code released under the <a href="https://github.com/carlesloriente/nocc-bootstrap-theme/blob/master/LICENSE">MIT</a> license.</p>]]></content><author><name>Carles Loriente</name></author><category term="nocc" /><category term="npm" /><category term="nocc" /><category term="npm" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Notes on Cloud Computing blog</title><link href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-24-notesoncloudcomputing-com/" rel="alternate" type="text/html" title="Notes on Cloud Computing blog" /><published>2024-03-24T10:10:45+01:00</published><updated>2024-03-24T10:10:45+01:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/posts/notesoncloudcomputing.com</id><content type="html" xml:base="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-24-notesoncloudcomputing-com/"><![CDATA[<p>Explore a curated collection of insightful articles, opinions, and practical code snippets at <a href="https://wwww.notesoncloudcomputing.com/">Notes on Cloud Computing</a>.</p>
+<p>Copyright (c) 2024 Carles Loriente. Code released under the <a href="https://github.com/carlesloriente/nocc-bootstrap-theme/blob/master/LICENSE">MIT</a> license.</p>]]></content><author><name>Carles Loriente</name></author><category term="nocc" /><category term="npm" /><category term="nocc" /><category term="npm" /><summary type="html"><![CDATA[Are you tired of outdated Bootstrap themes? Say hello to NOCC 🎉: A Modern Bootstrap 5 Theme!]]></summary></entry><entry><title type="html">Notes on Cloud Computing blog</title><link href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-24-notesoncloudcomputing-com/" rel="alternate" type="text/html" title="Notes on Cloud Computing blog" /><published>2024-03-24T10:10:45+01:00</published><updated>2024-03-24T10:10:45+01:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/posts/notesoncloudcomputing.com</id><content type="html" xml:base="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-24-notesoncloudcomputing-com/"><![CDATA[<p>Explore a curated collection of insightful articles, opinions, and practical code snippets at <a href="https://wwww.notesoncloudcomputing.com/">Notes on Cloud Computing</a>.</p>
 
 <p>Delve into the world of cloud technology with a resource that bridges knowledge and implementation, offering valuable perspectives and hands-on code for enthusiasts and professionals alike.</p>
 

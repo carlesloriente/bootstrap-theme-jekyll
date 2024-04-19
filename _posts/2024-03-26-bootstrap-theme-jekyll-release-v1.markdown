@@ -26,29 +26,21 @@ Using the [NOCC Bootstrap theme](https://www.npmjs.com/nocc-bootstrap-theme) npm
 4. **Extensive use of SVG and WeBP**
 5. **Static site with dynamic features**
 
-## How it works
-
 ## Installation & Configuration
 
 Just follow the instructions below, and then you can change the content of the pages and site settings.
 
 1. [Download the package](https://github.com/carlesloriente/bootstrap-theme-jekyll/archive/refs/heads/main.zip) or clone the project running the command:
 
-```bash
-   git clone --recursive git@github.com:carlesloriente/bootstrap-theme-jekyll.git
-```
+{% include code_block.html lang="bash" content='git clone --recursive git@github.com:carlesloriente/bootstrap-theme-jekyll.git' %}
 
-2. Install the NOCC npm package, run the command:
+1. Install the NOCC npm package, run the command:
 
-```bash
-  npm install nocc-bootstrap-theme --save
-```
+{% include code_block.html lang="bash" content='npm install nocc-bootstrap-theme --save' %}
 
-3. Install Ruby Gems and other dependencies, run the command:
+1. Install Ruby Gems and other dependencies, run the command:
 
-```bash
-  sh bin/install.sh
-```
+{% include code_block.html lang="bash" content='sh bin/install.sh' %}
 
 1. Update with your settings the configuration file `_config.yml`:
    - `landing` (Setting for the theme landing site, please set to `false`)
@@ -85,9 +77,7 @@ Suppose you want to use HTTPS in your environment and eliminate browser warnings
 
 Navigate to folder `bin/certs` and execute the following command to validate certs and update the CA trust DB.
 
-```bash
-openssl verify -CAfile ca_selfsigned.crt wildcard.local.crt && sudo cp ca_selfsigned.crt /etc/pki/ca-trust/source/anchors/ && sudo update-ca-trust
-```
+{% include code_block.html lang="bash" content='openssl verify -CAfile ca_selfsigned.crt wildcard.local.crt && sudo cp ca_selfsigned.crt /etc/pki/ca-trust/source/anchors/ && sudo update-ca-trust' %}
 
 - Modify your /etc/hosts file adding `127.0.0.1 bootstrap-theme.local`. Depending on your setup, there will already be an entry for 127.0.0.1; add bootstrap-theme.local after the last argument.
 - Execute the command `sh bin/build-local.sh`, which will build the site files, launch the Webrick web server using the `_site_local` folder as webroot, and open your browser.

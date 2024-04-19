@@ -10,6 +10,10 @@ tags:
 background: '/assets/images/bg-index.webp'
 ---
 
+**Are you tired of outdated Bootstrap themes?** Say hello to NOCC 🎉: A Modern Bootstrap 5 Theme!
+
+An NPM Package that brings the power of NOCC directly to your NodeJS project. [Get it now!](https://www.npmjs.com/package/nocc-bootstrap-theme).
+
 {:.text-center .img-fluid}
 [![NOCC NPM Package](/assets/vendor/nocc-bootstrap-theme/images/nocc/nocc-theme-showroom.png)](https://www.npmjs.com/package/nocc-bootstrap-theme)
 
@@ -36,11 +40,7 @@ This theme is a complete replacement for Bootstrap 5.3.3. You only need to inclu
 
 ## Installing
 
-Just follow the instructions below.
-
-```bash
-  npm install nocc-bootstrap-theme --save
-```
+{% include code_block.html lang="bash" content="npm install nocc-bootstrap-theme --save" %}
 
 - The `css/nocc-theme.css` (or the minified `nocc-theme.min.css`) file loads the font, icon, JavaScript, and image files.
 
@@ -55,9 +55,7 @@ You can change or use this theme in your own Sass code. Please download de sourc
 
 Then, you can also import the source files to your manifest (e.g. index.scss).
 
-```scss
-  @import "nocc-bootstrap-theme/src/styles/main.scss";
-```
+{% include code_block.html lang="scss" content='@import "nocc-bootstrap-theme/src/styles/main.scss"' %}
 
 If you need documentation or help with Bootstrap or its components in general, please head over to [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
 
@@ -76,20 +74,15 @@ If you want to see the theme in action, complete the following steps.
 
 Install node modules, run the command:
 
-```bash
-  npm install
-```
+{% include code_block.html lang="bash" content='npm install' %}
 
 Build the distribution, run the command:
 
-```bash
-  npm run dist
-```
+{% include code_block.html lang="bash" content='npm run dist' %}
 
 The dist structure looks like this:
 
-```filesystem
-nocc-bootstrap-theme/
+{% include code_block.html lang="filesystem" content='nocc-bootstrap-theme/
 └─ fonts/
 └─ icons/
 └─ images/
@@ -99,22 +92,17 @@ nocc-bootstrap-theme/
 |  └─ nocc-theme.min.css
 ├─ scripts/
 ├─ src/
-├─ static/
-```
+└─ static/' %}
 
 Now, let's build the demo site, run the command:
 
-```bash
-  npm run build-demo
-```
+{% include code_block.html lang="bash" content='npm run build-demo' %}
 
 The folder `demo` contains all the site files.
 
 To run the bundled web server, run the command:
 
-```bash
-  npm run server-watch
-```
+{% include code_block.html lang="bash" content='npm run server-watch' %}
 
 The command incorporates a watcher, so you can write code and see your changes immediately in the browser.
 

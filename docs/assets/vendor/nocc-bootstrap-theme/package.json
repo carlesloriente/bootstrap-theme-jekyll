@@ -1,9 +1,9 @@
 {
   "name": "nocc-bootstrap-theme",
   "description": "NOCC A responsive Bootstrap 5 theme",
-  "version": "1.0.8-ci-8581502131.0",
+  "version": "1.2.0",
   "config": {
-    "version_short": "1.0"
+    "version_short": "1.1"
   },
   "keywords": [
     "nocc",
@@ -37,10 +37,10 @@
   ],
   "scripts": {
     "dist": "./scripts/dist",
-    "start": "npm-run-all --parallel server-watch compile-watch",
+    "start-demo": "npm-run-all --parallel server-watch compile-demo",
     "server-watch": "live-server ./demo",
     "compile": "faucet",
-    "compile-watch": "faucet --watch --config=faucet.config.dev.js",
+    "compile-demo": "faucet --watch --config=faucet.config.dev.js",
     "lint": "sass-lint -v -q"
   },
   "style": "dist/css/nocc-theme.css",

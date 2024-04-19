@@ -6,17 +6,17 @@
   </a>
 </p>
 
-[![Github-sponsors](https://img.shields.io/static/v1?label=Sponsor&message=❤&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/carlesloriente)
 [![NOCC package](https://img.shields.io/npm/v/nocc-bootstrap-theme?logo=npm&logoColor=fff)](https://www.npm.im/nocc-bootstrap-theme)
+[![Github-sponsors](https://img.shields.io/static/v1?label=sponsor&message=❤&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/carlesloriente)
 [![NPM Downloads](https://img.shields.io/npm/dm/nocc-bootstrap-theme)](https://www.npm.im/nocc-bootstrap-theme)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg?logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIEdlbmVyYXRvcjogU1ZHIFJlcG8gTWl4ZXIgVG9vbHMgLS0+Cgo8c3ZnCiAgIHdpZHRoPSI4MDBweCIKICAgaGVpZ2h0PSI4MDBweCIKICAgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIKICAgY2xhc3M9Imljb24iCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzgiCiAgIHNvZGlwb2RpOmRvY25hbWU9ImRvY3VtZW50LXN2Z3JlcG8tY29tLnN2ZyIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS4zLjIgKDA5MWUyMGVmMGYsIDIwMjMtMTEtMjUpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM4IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0ibmFtZWR2aWV3OCIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIGlua3NjYXBlOnpvb209IjEuNDQ4NzUiCiAgICAgaW5rc2NhcGU6Y3g9IjQwMCIKICAgICBpbmtzY2FwZTpjeT0iNDAwIgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMzQ0MCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMzcxIgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnOCIgLz4KICA8cGF0aAogICAgIHN0eWxlPSJmaWxsOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjEuMjgiCiAgICAgZD0iTSA1MDMuMDAyNTksOTEuMzQ3NzEzIEggMTk1LjQyMDE5IFYgOTQyLjExOTA3IGggNjM1LjcyMzkgViAzOTEuMzMzOTEgWiIKICAgICBpZD0icGF0aDEiIC8+CiAgPHBhdGgKICAgICBkPSJNNTEyLjEgNjRIMTcydjg5Nmg2ODBWMzg1LjZMNTEyLjEgNjR6IG0yNzguOCAzMjQuM2gtMjgwdi0yNjVsMjgwIDI2NXpNODA4IDkxNkgyMTZWMTA4aDI3OC42bDAuMiAwLjJ2Mjk2LjJoMzEyLjlsMC4yIDAuMlY5MTZ6IgogICAgIGZpbGw9IiMzOTM5M0EiCiAgICAgaWQ9InBhdGgyIgogICAgIHN0eWxlPSJmaWxsOiNlNmU2ZTYiIC8+Cjwvc3ZnPgo=)](https://raw.githubusercontent.com/carlesloriente/nocc-bootstrap-theme/main/LICENSE)
-[![CI-Publish](https://github.com/carlesloriente/nocc-bootstrap-theme/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/carlesloriente/nocc-bootstrap-theme/actions/workflows/npm-publish.yml)
+[![Publish Package](https://github.com/carlesloriente/nocc-bootstrap-theme/actions/workflows/publish-release.yml/badge.svg)](https://github.com/carlesloriente/nocc-bootstrap-theme/actions/workflows/publish-release.yml)
 
 ## Introduction
 
 **Are you tired of outdated Bootstrap themes?**
 
-**Say hello to NOCC 🎉**: A Modern Bootstrap 5 Theme!.
+**Say hello to NOCC 🎉**: A Modern Bootstrap 5 Theme!
 
 It comes in two powerful options:
 
@@ -48,13 +48,13 @@ It comes in two powerful options:
 
 1. **Use of the latest Bootstrap 5 library**
 2. **Fully Responsive and Dual Color (light and dark)**
-3. **CSS and JS files minimized by default**
+3. **CSS and JS files are minimized by default**
 4. **Self-hosted Google web fonts**
 5. **Demo site built-in**
 
 ## What's included
 
-Within the download you'll find all the required directories and files, logically grouping common assets and providing both compiled and minified variations.
+You'll find all the required directories and files within the download, logically grouping common assets and providing compiled and minified variations.
 
 ### Bundled dependencies
 
@@ -86,7 +86,7 @@ nocc-bootstrap-theme/
 
 - The `css/nocc-theme.css` (or the minified `nocc-theme.min.css`) file loads the fonts and icons. Remember to include JavaScript files and images in your project.
 
-And, you can also import the source SCSS files to your manifest (e.g. index.scss).
+You can also import the source SCSS files to your manifest (e.g. index.scss).
 
 ```scss
   @import "nocc-bootstrap-theme/src/styles/main.scss";
@@ -96,7 +96,7 @@ If you need documentation or help with Bootstrap or its components in general, p
 
 ## Customize it
 
-You can change or use this theme in your own Sass code, please download the source code from the [GitHub repository](https://github.com/carlesloriente/nocc-bootstrap-theme) and change it.
+You can change or use this theme in your own Sass code; please download the source code from the [GitHub repository](https://github.com/carlesloriente/nocc-bootstrap-theme) and change it.
 
 ### Installing from source
 
@@ -136,14 +136,14 @@ Build the distribution, run the command:
 
 ### Demo website
 
-The source include resources for building and running locally a sample website.
+The source includes resources for building and running locally a sample website.
 
 If you want to see the theme in action, complete the following steps.
 
 Now, let's build the demo site, run the command:
 
 ```bash
-  npm run compile
+  npm run compile-demo
 ```
 
 The folder `demo` contains all the generated site files.
@@ -154,10 +154,10 @@ To run the bundled web server, run the command:
   npm run server-watch
 ```
 
-Additionally, there's an option that builds the files on the fly when there's a change and runs the web server incorporating a watcher, so you can write code and see your changes immediately in the browser, run the command:
+Additionally, an option builds the files on the fly when there's a change and runs the web server incorporating a watcher, so you can write code and see your changes immediately in the browser. Run the command:
 
 ```bash
-  npm run start
+  npm run start-demo
 ```
 
 ### Testing your changes
@@ -178,7 +178,7 @@ New contributors are always welcome! Check out [CONTRIBUTING.md](https://github.
 
 ## Creator
 
-**[Carles Loriente](https://www.linkedin.com/in/carles-loriente/)** creator and maintainer of the NOCC Bootstrap theme.
+**[Carles Loriente](https://www.linkedin.com/in/carles-loriente/)** is the creator and maintainer of the NOCC Bootstrap theme.
 
 - [Linkedin](https://www.linkedin.com/in/carles-loriente)
 - [Twitter](https://twitter.com/godarthvader)

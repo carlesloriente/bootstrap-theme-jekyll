@@ -3,7 +3,7 @@
         <span class="daylight filter-white"></span>
       </button>
     </div>
-    <script type="text/javascript" src="{{ '/assets/vendor/nocc-bootstrap-theme/js/theme-toggler.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/vendor/nocc-bootstrap-theme/js/theme-toggler.min.js' | relative_url }}"></script>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
@@ -34,12 +34,12 @@
             </li>
             {%- if site.gh_repository %}
             <li class="nav-item">
-              <a href="https://github.com/carlesloriente/bootstrap-theme-jekyll" target="_blank" hreflang="{{ site.lang }}" rel="noreferrer" class="nx-p-2 nx-text-current"><img class="nav-github" alt="NotesOnCloudComputing Github repo stars" src="https://img.shields.io/github/stars/carlesloriente/bootstrap-theme-jekyll?style=social"></a>
+              <a href="{{ site.theme_repo }}" hreflang="{{ site.lang }}" target="_blank" rel="noreferrer" aria-label="{{ site.theme_name }} repo" title="{{ site.theme_name }} repo"><img class="filter-white" src="{{ '/assets/vendor/nocc-bootstrap-theme/icons/1.11.0/github.svg' | relative_url }}" width="24px" height="24px" aria-hidden="true" /></a>
             </li>
             {%- endif %}
             {%- if site.kofi %}
             <li class="nav-item">
-              <a href="https://ko-fi.com/S6S1O2GTU" target="_blank" hreflang="{{ site.lang }}" rel="noopener" title="Support me on ko-fi.com"><img class="nav-kofi" src="/assets/vendor/nocc-bootstrap-theme/images/nocc/kofi_s_logo_nolabel.webp" border="0" alt="Buy Me a Coffee at ko-fi.com" /></a>
+              <a href="https://ko-fi.com/S6S1O2GTU" hreflang="{{ site.lang }}" target="_blank" rel="noreferrer" aria-label="Support me on ko-fi.com" title="Support me on ko-fi.com"><img class="nav-kofi" src="/assets/vendor/nocc-bootstrap-theme/images/nocc/kofi_s_logo_nolabel.webp" border="0" alt="Buy Me a Coffee at ko-fi.com" /></a>
             </li>
             {% endif -%}
           </ul>
