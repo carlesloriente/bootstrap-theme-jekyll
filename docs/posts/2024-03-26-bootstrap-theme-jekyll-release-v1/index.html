@@ -14,14 +14,15 @@
   <meta property="og:description" content="">
   <meta property="og:image" content="https://bootstrap-theme.notesoncloudcomputing.com/assets/images/bg-post.webp">
   <meta property="og:type" content="article">
-  <link rel="stylesheet" href="/assets/vendor/nocc-bootstrap-theme/css/nocc-theme.css" type="text/css">
+  <link rel="stylesheet" href="/assets/vendor/nocc-bootstrap-theme/css/nocc-theme.min.css" type="text/css">
 
+  <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
   <link rel="canonical" href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-26-bootstrap-theme-jekyll-release-v1/">
   <link rel="alternate" type="application/rss+xml" title="A Bootstrap 5 theme" href="/feed.xml">
-  <link rel="shortcut icon" href="/assets/vendor/nocc-bootstrap-theme/images/favicon.ico">
-  <link rel="icon" href="/assets/vendor/nocc-bootstrap-theme/images/favicon.ico" sizes="any">
-  <link rel="icon" href="/assets/vendor/nocc-bootstrap-theme/images/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/assets/vendor/nocc-bootstrap-theme/images/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="/assets/vendor/nocc-bootstrap-theme/images/favicon_io/favicon.ico">
+  <link rel="icon" href="/assets/vendor/nocc-bootstrap-theme/images/favicon_io/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/vendor/nocc-bootstrap-theme/images/favicon_io/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/vendor/nocc-bootstrap-theme/images/favicon_io/favicon.png" type="image/png">
   <link rel="manifest" href="/manifest.webmanifest"><!-- Global site tag (gtag.js) - Google Analytics -->
 <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-SM4Q43P2BB" ></script>
 <script type="text/javascript">
@@ -38,7 +39,7 @@
         <span class="daylight filter-white"></span>
       </button>
     </div>
-    <script type="text/javascript" src="/assets/vendor/nocc-bootstrap-theme/js/theme-toggler.js"></script>
+    <script type="text/javascript" src="/assets/vendor/nocc-bootstrap-theme/js/theme-toggler.min.js"></script>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
@@ -68,10 +69,10 @@
               <a class="nav-link" hreflang="en" href="/contact/" aria-label="A Bootstrap 5 theme Contact form">Contact</a>
             </li>
             <li class="nav-item">
-              <a href="https://github.com/carlesloriente/bootstrap-theme-jekyll" target="_blank" hreflang="en" rel="noreferrer" class="nx-p-2 nx-text-current"><img class="nav-github" alt="NotesOnCloudComputing Github repo stars" src="https://img.shields.io/github/stars/carlesloriente/bootstrap-theme-jekyll?style=social"></a>
+              <a href="https://github.com/carlesloriente/nocc-bootstrap-theme/" hreflang="en" target="_blank" rel="noreferrer" aria-label="NOCC Bootstrap Theme repo" title="NOCC Bootstrap Theme repo"><img class="filter-white" src="/assets/vendor/nocc-bootstrap-theme/icons/1.11.0/github.svg" width="24px" height="24px" aria-hidden="true" /></a>
             </li>
             <li class="nav-item">
-              <a href="https://ko-fi.com/S6S1O2GTU" target="_blank" hreflang="en" rel="noopener" title="Support me on ko-fi.com"><img class="nav-kofi" src="/assets/vendor/nocc-bootstrap-theme/images/nocc/kofi_s_logo_nolabel.webp" border="0" alt="Buy Me a Coffee at ko-fi.com" /></a>
+              <a href="https://ko-fi.com/S6S1O2GTU" hreflang="en" target="_blank" rel="noreferrer" aria-label="Support me on ko-fi.com" title="Support me on ko-fi.com"><img class="nav-kofi" src="/assets/vendor/nocc-bootstrap-theme/images/nocc/kofi_s_logo_nolabel.webp" border="0" alt="Buy Me a Coffee at ko-fi.com" /></a>
             </li>
             </ul>
         </div>
@@ -87,15 +88,7 @@
     <div class="row">
       <div class="mx-auto">
         <div class="post-heading">
-          <h1>Released NOCC Jekyll Bundle</h1><span class="tags-heading">
-            
-              <a href="/tags/nocc/" hreflang="en" aria-label="nocc">#nocc</a>
-            
-              <a href="/tags/theme/" hreflang="en" aria-label="theme">#theme</a>
-            
-              <a href="/tags/bootstrap/" hreflang="en" aria-label="bootstrap">#bootstrap</a>
-            
-          </span><span class="meta">Posted by
+          <h1>Released NOCC Jekyll Bundle</h1><span class="meta">Posted by
             <a href="/posts/" hreflang="en" aria-label="Author">Carles Loriente </a>  
             on March 26, 2024 &middot; <span class="reading-time" title="Estimated read time"> 6 mins  read</span></span>
         </div>
@@ -123,8 +116,6 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
   <li><strong>Static site with dynamic features</strong></li>
 </ol>
 
-<h2 id="how-it-works">How it works</h2>
-
 <h2 id="installation--configuration">Installation &amp; Configuration</h2>
 
 <p>Just follow the instructions below, and then you can change the content of the pages and site settings.</p>
@@ -133,22 +124,25 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
   <li><a href="https://github.com/carlesloriente/bootstrap-theme-jekyll/archive/refs/heads/main.zip">Download the package</a> or clone the project running the command:</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   git clone <span class="nt">--recursive</span> git@github.com:carlesloriente/bootstrap-theme-jekyll.git
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>git clone --recursive git@github.com:carlesloriente/bootstrap-theme-jekyll.git</code>
+</pre></div>
 
 <ol>
   <li>Install the NOCC npm package, run the command:</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  npm <span class="nb">install </span>nocc-bootstrap-theme <span class="nt">--save</span>
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>npm install nocc-bootstrap-theme --save</code>
+</pre></div>
 
 <ol>
   <li>Install Ruby Gems and other dependencies, run the command:</li>
 </ol>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sh bin/install.sh
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>sh bin/install.sh</code>
+</pre></div>
 
 <ol>
   <li>Update with your settings the configuration file <code class="language-plaintext highlighter-rouge">_config.yml</code>:
@@ -190,8 +184,9 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
 
 <p>Navigate to folder <code class="language-plaintext highlighter-rouge">bin/certs</code> and execute the following command to validate certs and update the CA trust DB.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl verify <span class="nt">-CAfile</span> ca_selfsigned.crt wildcard.local.crt <span class="o">&amp;&amp;</span> <span class="nb">sudo cp </span>ca_selfsigned.crt /etc/pki/ca-trust/source/anchors/ <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>update-ca-trust
-</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
+<code>openssl verify -CAfile ca_selfsigned.crt wildcard.local.crt &amp;&amp; sudo cp ca_selfsigned.crt /etc/pki/ca-trust/source/anchors/ &amp;&amp; sudo update-ca-trust</code>
+</pre></div>
 
 <ul>
   <li>Modify your /etc/hosts file adding <code class="language-plaintext highlighter-rouge">127.0.0.1 bootstrap-theme.local</code>. Depending on your setup, there will already be an entry for 127.0.0.1; add bootstrap-theme.local after the last argument.</li>
@@ -315,7 +310,7 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
       </li>
     </ul>
     <p class="copyright text-copyright">Copyright &copy; <a href="https://www.notesoncloudcomputing.com/about/" hreflang="en" aria-label="A Bootstrap 5 theme author">Carles Loriente</a> 2024<br />
-      <a href="https://github.com/carlesloriente/nocc-bootstrap-theme/" hreflang="en" target="_blank" rel="noreferrer" aria-label="NOCC Bootstrap Theme">NOCC Bootstrap Theme</a> v.1.0.7 created by <a href="https://www.notesoncloudcomputing.com/about/" hreflang="en" target="_blank" rel="noreferrer" aria-label="Autor website https://www.notesoncloudcomputing.com/about/">Carles Loriente</a><br />
+      <a href="https://github.com/carlesloriente/nocc-bootstrap-theme/" hreflang="en" target="_blank" rel="noreferrer" aria-label="NOCC Bootstrap Theme">NOCC Bootstrap Theme</a> v.1.2.0 created by <a href="https://www.notesoncloudcomputing.com/about/" hreflang="en" target="_blank" rel="noreferrer" aria-label="Autor website https://www.notesoncloudcomputing.com/about/">Carles Loriente</a><br />
       Build with <a href="https://jekyllrb.com" hreflang="en" target="_blank" rel="noreferrer" aria-label="Jekyll">Jekyll</a><br />
       Proudly hosted by <a href="https://github.com" hreflang="en" target="_blank" rel="noreferrer" aria-label="Github"><strong>GitHub</strong></a>
     </p>
@@ -323,6 +318,8 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
 </footer>
     
 <script type="text/javascript" rel="preload" src="/assets/vendor/nocc-bootstrap-theme/js/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/vendor/nocc-bootstrap-theme/js/clipboardjs/clipboard.min.js"></script>
+<script type="text/javascript" src="/assets/vendor/nocc-bootstrap-theme/js/copy-clipboard.js"></script>
 <script type="text/javascript" src="/assets/vendor/nocc-bootstrap-theme/js/bootstrap/5.3.3/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="https://notes-on-cloud-infrastructure.disqus.com/count.js" async id="dsq-count-scr"></script>
   </body>

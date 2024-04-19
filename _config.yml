@@ -18,7 +18,7 @@ permalink               : pretty
 critical_css            : false
 
 # Theme Notice (please don't remove it ;))
-theme_version           : v.1.0.7
+theme_version           : v.1.2.0
 theme_name              : NOCC Bootstrap Theme
 theme_bundle_repo       : https://github.com/carlesloriente/bootstrap-theme-jekyll/
 theme_repo              : https://github.com/carlesloriente/nocc-bootstrap-theme/
@@ -27,7 +27,7 @@ theme_author            : Carles Loriente
 theme_author_url        : https://www.notesoncloudcomputing.com/about/
 theme_download          : https://github.com/carlesloriente/bootstrap-theme-jekyll/archive/refs/heads/main.zip
 theme_package           : https://www.npmjs.com/nocc-bootstrap-theme
-theme_logo              : "/assets/vendor/nocc-bootstrap-theme/images/nocc/nocc_logo.webp"
+theme_logo              : "/assets/vendor/nocc-bootstrap-theme/images/nocc/nocc-theme-webshot.webp"
 
 # Social Profiles
 email                   : "fi1nziulf@mozmail.com"
@@ -90,14 +90,10 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-redirect-from
-  - jekyll-debug
 
 sass:
   load_paths:
     - ./_sass
-    - ./includes
-    - ./node_modules/bootstrap/scss
-    - ./assets/vendor/nocc-bootstrap-theme/styles
   style                 : compressed
 
-exclude: ["AUTHORS.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md", "LICENSE", "README.md", "SECURITY.md", "techstack.md", "techstack.yml", "WORKFLOW.md", "bin", "Gemfile", "Gemfile.lock", "manifest.webmanifest", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+exclude: ["AUTHORS.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md", "CODEOWNERS", "LICENSE", "README.md", "SECURITY.md", "techstack.md", "techstack.yml", "WORKFLOW.md", "bin", "Gemfile", "Gemfile.lock", "manifest.webmanifest", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]

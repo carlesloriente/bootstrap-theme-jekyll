@@ -6,6 +6,25 @@
 Features a homepage, about page, tags cloud page, gallery of images page, examples post pages with comments powered by [Disqus](https://disqus.com/) and a contact form powered by [Formspree](https://formspree.io/).
 Using the [NOCC Bootstrap theme](https://www.npmjs.com/nocc-bootstrap-theme) npm package.
 
+## Table of contents
+
+- [NOCC Jekyll Bundle](#nocc-jekyll-bundle)
+  - [Table of contents](#table-of-contents)
+  - [Features](#features)
+  - [Installation](#installation)
+    - [Configuration](#configuration)
+    - [Add your content](#add-your-content)
+    - [Setup local environment](#setup-local-environment)
+      - [Use HTTPS](#use-https)
+    - [Host your site](#host-your-site)
+      - [in GitHub-Pages](#in-github-pages)
+      - [in Amazon S3 bucket](#in-amazon-s3-bucket)
+  - [Bugs and Issues](#bugs-and-issues)
+  - [Contributing](#contributing)
+  - [Creator](#creator)
+  - [Thanks](#thanks)
+  - [Copyright and License](#copyright-and-license)
+
 ## Features
 
 1. **A complete website ready to roll out**
@@ -14,29 +33,29 @@ Using the [NOCC Bootstrap theme](https://www.npmjs.com/nocc-bootstrap-theme) npm
 4. **Extensive use of SVG and WeBP**
 5. **Static site with dynamic features**
 
-## How it works
-
-## Installation & Configuration
+## Installation
 
 Just follow the instructions below, and then you can change the content of the pages and site settings.
 
-1. [Download the package](https://github.com/carlesloriente/bootstrap-theme-jekyll/archive/refs/heads/main.zip) or clone the project running the command:
+- [Download the package](https://github.com/carlesloriente/bootstrap-theme-jekyll/archive/refs/heads/main.zip) or clone the project running the command:
 
 ```bash
    git clone --recursive git@github.com:carlesloriente/bootstrap-theme-jekyll.git
 ```
 
-2. Install the NOCC npm package, run the command:
+- Install the NOCC npm package, run the command:
 
 ```bash
   npm install nocc-bootstrap-theme --save
 ```
 
-3. Install Ruby Gems and other dependencies, run the command:
+- Install Ruby Gems and other dependencies, run the command:
 
 ```bash
   sh bin/install.sh
 ```
+
+### Configuration
 
 1. Update with your settings the configuration file `_config.yml`:
    - `landing` (Setting for the theme landing site, please set to `false`)
@@ -65,18 +84,18 @@ You need to create new posts/articles inside the folder named `_posts`. The file
 
 > **&#9940;** Posts should be named YEAR-MONTH-DAY-title.MARKUP (Note the MARKUP extension, which is usually .md or .markdown).
 
-### Test your site locally
+### Setup local environment
 
 Use the Jekyll build and web server command `bundle exec jekyll serve` or set up the local development environment (*recommended*).
 
-#### Configure local environment
+#### Use HTTPS
 
 Suppose you want to use HTTPS in your environment and eliminate browser warnings when developing. In that case, the bundle comes with handy pre-generated certs.
 
 Navigate to folder `bin/certs` and execute the following command to validate certs and update the CA trust DB.
 
 ```bash
-openssl verify -CAfile ca_selfsigned.crt wildcard.local.crt && sudo cp ca_selfsigned.crt /etc/pki/ca-trust/source/anchors/ && sudo update-ca-trust
+  openssl verify -CAfile ca_selfsigned.crt wildcard.local.crt && sudo cp ca_selfsigned.crt /etc/pki/ca-trust/source/anchors/ && sudo update-ca-trust
 ```
 
 - Modify your /etc/hosts file adding `127.0.0.1 bootstrap-theme.local`. Depending on your setup, there will already be an entry for 127.0.0.1; add bootstrap-theme.local after the last argument.
@@ -106,13 +125,15 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 New contributors are always welcome! Check out [CONTRIBUTING.md](https://github.com/carlesloriente/bootstrap-theme-jekyll/blob/master/CONTRIBUTING.md) to get involved.
 
-## About
+## Creator
 
-**[Carles Loriente](https://www.linkedin.com/in/carles-loriente/)** is the creator and maintainer of the NOCC Jekyll Bundle and the NOCC Bootstrap theme.
+**[Carles Loriente](https://www.linkedin.com/in/carles-loriente/)** is the creator and maintainer of the NOCC Bootstrap theme.
 
 - [Linkedin](https://www.linkedin.com/in/carles-loriente)
 - [Twitter](https://twitter.com/godarthvader)
 - [GitHub](https://github.com/carlesloriente)
+
+## Thanks
 
 [Bootstrap 5](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
