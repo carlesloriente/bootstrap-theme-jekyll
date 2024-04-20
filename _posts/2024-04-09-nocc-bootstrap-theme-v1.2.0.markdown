@@ -8,8 +8,12 @@ tags:
 - nocc
 - npm
 - changelog
-background: '/assets/images/bg-index.webp'
+background: '/assets/images/bg-index-3.webp'
 ---
+
+Say hello to NOCC v1.2.0 🎉: A Modern Bootstrap 5 Theme!
+
+An NPM Package that brings the power of NOCC directly to your NodeJS project. [Get it now!](https://www.npmjs.com/package/nocc-bootstrap-theme).
 
 {:.text-center}
 ![NOCC Thene](/assets/images/nocc-theme-showroom.png){:.img-fluid}

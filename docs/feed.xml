@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://bootstrap-theme.notesoncloudcomputing.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bootstrap-theme.notesoncloudcomputing.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-04-19T17:05:45+02:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/feed.xml</id><title type="html">A Bootstrap 5 theme</title><subtitle>A responsive Bootstrap 5 dual theme</subtitle><author><name>Carles Loriente</name></author><entry><title type="html">NOCC Bootstrap Theme v1.2 released</title><link href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-04-09-nocc-bootstrap-theme-v1-2-0/" rel="alternate" type="text/html" title="NOCC Bootstrap Theme v1.2 released" /><published>2024-04-09T15:10:45+02:00</published><updated>2024-04-09T15:10:45+02:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/posts/nocc-bootstrap-theme-v1.2.0</id><content type="html" xml:base="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-04-09-nocc-bootstrap-theme-v1-2-0/"><![CDATA[<p class="text-center"><img src="/assets/images/nocc-theme-showroom.png" alt="NOCC Thene" class="img-fluid" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://bootstrap-theme.notesoncloudcomputing.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bootstrap-theme.notesoncloudcomputing.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-04-20T01:56:40+02:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/feed.xml</id><title type="html">A Bootstrap 5 theme</title><subtitle>A responsive Bootstrap 5 dual theme</subtitle><author><name>Carles Loriente</name></author><entry><title type="html">NOCC Bootstrap Theme v1.2 released</title><link href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-04-09-nocc-bootstrap-theme-v1-2-0/" rel="alternate" type="text/html" title="NOCC Bootstrap Theme v1.2 released" /><published>2024-04-09T15:10:45+02:00</published><updated>2024-04-09T15:10:45+02:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/posts/nocc-bootstrap-theme-v1.2.0</id><content type="html" xml:base="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-04-09-nocc-bootstrap-theme-v1-2-0/"><![CDATA[<p>Say hello to NOCC v1.2.0 🎉: A Modern Bootstrap 5 Theme!</p>
+
+<p>An NPM Package that brings the power of NOCC directly to your NodeJS project. <a href="https://www.npmjs.com/package/nocc-bootstrap-theme">Get it now!</a>.</p>
+
+<p class="text-center"><img src="/assets/images/nocc-theme-showroom.png" alt="NOCC Thene" class="img-fluid" /></p>
 
 <p class="text-center"><strong>A Responsive Bootstrap 5 dual Theme</strong></p>
 
@@ -38,7 +42,11 @@
   <li>Good-looking size</li>
 </ul>
 
-<p><a href="https://github.com/carlesloriente/nocc-bootstrap-theme/compare/v1.1.1...v1.2.0">Full Changelog</a></p>]]></content><author><name>Carles Loriente</name></author><category term="nocc" /><category term="npm" /><category term="nocc" /><category term="npm" /><category term="changelog" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">NOCC Bootstrap Theme v1.1 released</title><link href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-04-06-nocc-bootstrap-theme-v1-1-0/" rel="alternate" type="text/html" title="NOCC Bootstrap Theme v1.1 released" /><published>2024-04-06T10:10:45+02:00</published><updated>2024-04-06T10:10:45+02:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/posts/nocc-bootstrap-theme-v1.1.0</id><content type="html" xml:base="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-04-06-nocc-bootstrap-theme-v1-1-0/"><![CDATA[<p class="text-center"><img src="/assets/images/nocc-theme-showroom.png" alt="NOCC Thene" class="img-fluid" /></p>
+<p><a href="https://github.com/carlesloriente/nocc-bootstrap-theme/compare/v1.1.1...v1.2.0">Full Changelog</a></p>]]></content><author><name>Carles Loriente</name></author><category term="nocc" /><category term="npm" /><category term="nocc" /><category term="npm" /><category term="changelog" /><summary type="html"><![CDATA[Say hello to NOCC v1.2.0 🎉: A Modern Bootstrap 5 Theme!]]></summary></entry><entry><title type="html">NOCC Bootstrap Theme v1.1 released</title><link href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-04-06-nocc-bootstrap-theme-v1-1-0/" rel="alternate" type="text/html" title="NOCC Bootstrap Theme v1.1 released" /><published>2024-04-06T10:10:45+02:00</published><updated>2024-04-06T10:10:45+02:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/posts/nocc-bootstrap-theme-v1.1.0</id><content type="html" xml:base="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-04-06-nocc-bootstrap-theme-v1-1-0/"><![CDATA[<p>Say hello to NOCC v1.1.0 🎉: A Modern Bootstrap 5 Theme!</p>
+
+<p>An NPM Package that brings the power of NOCC directly to your NodeJS project. <a href="https://www.npmjs.com/package/nocc-bootstrap-theme">Get it now!</a>.</p>
+
+<p class="text-center"><img src="/assets/images/nocc-theme-showroom.png" alt="NOCC Thene" class="img-fluid" /></p>
 
 <p class="text-center"><strong>A Responsive Bootstrap 5 dual Theme</strong></p>
 
@@ -88,10 +96,10 @@
   <li>Fix action to minimize CSS and JS</li>
 </ul>
 
-<p><a href="https://github.com/carlesloriente/nocc-bootstrap-theme/compare/v1.0.6...v1.1.0">Full Changelog</a></p>]]></content><author><name>Carles Loriente</name></author><category term="nocc" /><category term="npm" /><category term="nocc" /><category term="npm" /><category term="changelog" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Released NOCC Jekyll Bundle</title><link href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-26-bootstrap-theme-jekyll-release-v1/" rel="alternate" type="text/html" title="Released NOCC Jekyll Bundle" /><published>2024-03-26T10:10:45+01:00</published><updated>2024-03-26T10:10:45+01:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/posts/bootstrap-theme-jekyll-release-v1</id><content type="html" xml:base="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-26-bootstrap-theme-jekyll-release-v1/"><![CDATA[<p class="text-center"><img src="/assets/images/nocc-showcase.webp" alt="NOCC Jekyll Bundle webshots" class="img-fluid" /></p>
+<p><a href="https://github.com/carlesloriente/nocc-bootstrap-theme/compare/v1.0.6...v1.1.0">Full Changelog</a></p>]]></content><author><name>Carles Loriente</name></author><category term="nocc" /><category term="npm" /><category term="nocc" /><category term="npm" /><category term="changelog" /><summary type="html"><![CDATA[Say hello to NOCC v1.1.0 🎉: A Modern Bootstrap 5 Theme!]]></summary></entry><entry><title type="html">Released NOCC Jekyll Bundle</title><link href="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-26-bootstrap-theme-jekyll-release-v1/" rel="alternate" type="text/html" title="Released NOCC Jekyll Bundle" /><published>2024-03-26T10:10:45+01:00</published><updated>2024-03-26T10:10:45+01:00</updated><id>https://bootstrap-theme.notesoncloudcomputing.com/posts/bootstrap-theme-jekyll-release-v1</id><content type="html" xml:base="https://bootstrap-theme.notesoncloudcomputing.com/posts/2024-03-26-bootstrap-theme-jekyll-release-v1/"><![CDATA[<p class="text-center"><img src="/assets/images/nocc-showcase.webp" alt="NOCC Jekyll Bundle webshots" class="img-fluid" /></p>
 
 <p><a href="https://bootstrap-theme.notesoncloudcomputing.com/">NOCC Jekyll Bundle</a>. A fully featured bundle site for <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> created by <a href="https://github.com/carlesloriente">Carles Loriente</a>.
-Features a homepage, about page, tags cloud page, gallery of images page, examples post pages with comments powered by <a href="https://disqus.com/" target="_blank">Disqus</a>, and a contact form powered by <a href="https://formspree.io/" target="_blank">Formspree</a>.
+Containing a homepage, about page, tags cloud page, gallery of images page, examples post pages with comments powered by <a href="https://disqus.com/" target="_blank">Disqus</a>, and a contact form powered by <a href="https://formspree.io/" target="_blank">Formspree</a>.
 Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap theme</a> npm package.</p>
 
 <h2 id="features">Features</h2>
@@ -104,33 +112,35 @@ Using the <a href="https://www.npmjs.com/nocc-bootstrap-theme">NOCC Bootstrap th
   <li><strong>Static site with dynamic features</strong></li>
 </ol>
 
-<h2 id="installation--configuration">Installation &amp; Configuration</h2>
+<h2 id="installation">Installation</h2>
 
 <p>Just follow the instructions below, and then you can change the content of the pages and site settings.</p>
 
-<ol>
+<ul>
   <li><a href="https://github.com/carlesloriente/bootstrap-theme-jekyll/archive/refs/heads/main.zip">Download the package</a> or clone the project running the command:</li>
-</ol>
+</ul>
 
 <div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
 <code>git clone --recursive git@github.com:carlesloriente/bootstrap-theme-jekyll.git</code>
 </pre></div>
 
-<ol>
+<ul>
   <li>Install the NOCC npm package, run the command:</li>
-</ol>
+</ul>
 
 <div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
 <code>npm install nocc-bootstrap-theme --save</code>
 </pre></div>
 
-<ol>
+<ul>
   <li>Install Ruby Gems and other dependencies, run the command:</li>
-</ol>
+</ul>
 
 <div class="language-bash highlighter-rouge"><pre class="highlight"><button type="button" class="btn-clipboard float-end tooltip" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard"><span class="tooltiptext">Copy to clipboard</span><span class="clipboard filter-white"></span></button>
 <code>sh bin/install.sh</code>
 </pre></div>
+
+<h2 id="configuration">Configuration</h2>
 
 <ol>
   <li>Update with your settings the configuration file <code class="language-plaintext highlighter-rouge">_config.yml</code>:
