@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*!
- * NOCC Bootstrap theme 1.2.1 (https://github.com/carlesloriente/nocc-bootstrap-theme/)
- * Copyright 2024 Carles Loriente
- * A Responsive Bootstrap 5 dual Theme
- */
+* NOCC Bootstrap theme 1.2.2 (https://github.com/carlesloriente/nocc-bootstrap-theme/)
+* Copyright 2024 Carles Loriente
+* A Responsive Bootstrap 5 dual Theme
+*/
 /* Override Bootstrap variables
 Colors */
 /* Characters which are escaped by the escape-svg function */
@@ -461,7 +461,7 @@ Colors */
   --bs-black-rgb: 0, 0, 0;
   --bs-font-sans-serif: "Roboto", -apple-system, blinkmacsystemfont, "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: "Oxygen Mono", sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.05));
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: "Lora", "Times New Roman", "Georgia", "Palatino", "Baskerville", -apple-system, blinkmacsystemfont, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-body-font-size: 1.1rem;
   --bs-body-font-weight: 400;
@@ -480,7 +480,7 @@ Colors */
   --bs-tertiary-color-rgb: 33, 37, 41;
   --bs-tertiary-bg: #dee2e6;
   --bs-tertiary-bg-rgb: 222, 226, 230;
-  --bs-heading-color: var(--bs-heading-color);
+  --bs-heading-color: inherit;
   --bs-link-color: #007bff;
   --bs-link-color-rgb: 0, 123, 255;
   --bs-link-decoration: none;

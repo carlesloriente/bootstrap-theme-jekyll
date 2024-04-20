@@ -15,7 +15,7 @@ background: '/assets/images/bg-post.webp'
 ![NOCC Jekyll Bundle webshots](/assets/images/nocc-showcase.webp){:.img-fluid}
 
 [NOCC Jekyll Bundle](https://bootstrap-theme.notesoncloudcomputing.com/). A fully featured bundle site for [Jekyll](https://jekyllrb.com/){:target="_blank"} created by [Carles Loriente](https://github.com/carlesloriente).
-Features a homepage, about page, tags cloud page, gallery of images page, examples post pages with comments powered by [Disqus](https://disqus.com/){:target="_blank"}, and a contact form powered by [Formspree](https://formspree.io/){:target="_blank"}.
+Containing a homepage, about page, tags cloud page, gallery of images page, examples post pages with comments powered by [Disqus](https://disqus.com/){:target="_blank"}, and a contact form powered by [Formspree](https://formspree.io/){:target="_blank"}.
 Using the [NOCC Bootstrap theme](https://www.npmjs.com/nocc-bootstrap-theme) npm package.
 
 ## Features
@@ -26,21 +26,23 @@ Using the [NOCC Bootstrap theme](https://www.npmjs.com/nocc-bootstrap-theme) npm
 4. **Extensive use of SVG and WeBP**
 5. **Static site with dynamic features**
 
-## Installation & Configuration
+## Installation
 
 Just follow the instructions below, and then you can change the content of the pages and site settings.
 
-1. [Download the package](https://github.com/carlesloriente/bootstrap-theme-jekyll/archive/refs/heads/main.zip) or clone the project running the command:
+- [Download the package](https://github.com/carlesloriente/bootstrap-theme-jekyll/archive/refs/heads/main.zip) or clone the project running the command:
 
 {% include code_block.html lang="bash" content='git clone --recursive git@github.com:carlesloriente/bootstrap-theme-jekyll.git' %}
 
-1. Install the NOCC npm package, run the command:
+- Install the NOCC npm package, run the command:
 
 {% include code_block.html lang="bash" content='npm install nocc-bootstrap-theme --save' %}
 
-1. Install Ruby Gems and other dependencies, run the command:
+- Install Ruby Gems and other dependencies, run the command:
 
 {% include code_block.html lang="bash" content='sh bin/install.sh' %}
+
+## Configuration
 
 1. Update with your settings the configuration file `_config.yml`:
    - `landing` (Setting for the theme landing site, please set to `false`)
