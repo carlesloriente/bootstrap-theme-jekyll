@@ -4,7 +4,6 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape | page.title }}{% elsif page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape | page.title }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape | page.title }}{% endif %}">
   <meta name="google-site-verification" content="{{ site.google_site_verification }}">
   <meta name="author" content="{{ site.author }}">
-  <!-- meta name="keywords" content="{% if page.tags %}{{ page.tags }}{% else %}{{ site.categories }}{% endif %}"-->
   <meta name="publish_date" property="og:publish_date" content="{% if page.date %}{{ page.date }}{% else %}{{ site.date }}{% endif %}">
   <!-- Twitter Meta Tags -->
   {%- if site.twitter_username %}
@@ -35,7 +34,7 @@
   </style>
 {% else %}
   <link rel="stylesheet" href="{{ '/assets/vendor/nocc-bootstrap-theme/css/nocc-theme.min.css' | relative_url }}" type="text/css">
-{% endif %}
+{% endif -%}
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" type="text/css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ 'feed.xml' | relative_url }}">
