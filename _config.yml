@@ -13,6 +13,8 @@ locale                  : "en-US"
 lang                    : "en"
 formemail               : xwkglaqr
 permalink               : pretty
+date                    : 2024-03-24 11:10:45 +0200
+categories              : "bootstrap-theme, nocc, npm, jekyll"
 
 # Features
 critical_css            : false
