@@ -22,7 +22,8 @@ tsconfig.json
 *.swp
 temp/*
 
-# Jekyll build
+# Jekyll builds
+docs/*
 _site*
 
 # Exception
