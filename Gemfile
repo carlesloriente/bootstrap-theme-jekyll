@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.3", group: :jekyll_plugins
+gem "jekyll", "~> 4.4.1", group: :jekyll_plugins
 gem "base64"
 gem "bigdecimal"
 gem "csv"
